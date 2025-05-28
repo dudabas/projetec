@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: url('papel.png') repeat;
+    background-size: cover;
+    color: #222;
+    text-align: center;
+  }
+  
+
+  .icon-wrapper {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .icon-talheres {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: #d33;
+  }
+  
+
+  .top-bar {
+    background-color: #aa2c1d;
+    color: white;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: auto;
+    border-bottom-left-radius: 70px;
+   
+  }
+  
+
+
+  
+  .menu a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
+
+  .image-container img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    margin: 10px auto;
+    display: block;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+
+  main h1 {
+    margin: 40px 0 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+  }
+  
+  .intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .intro-text h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .intro-text p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
