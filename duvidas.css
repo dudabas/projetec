@@ -1,0 +1,95 @@
+body {
+    background-color: #d3cbaa; /* fundo bege da página */
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #aa2c1d;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  
+  .logo-img {
+    width: 90px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+  
+  .menu-bar {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+  }
+  
+  .menu-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10;
+    margin-left: 10px;
+  }
+  
+  .menu-bar a:hover {
+    text-decoration: underline;
+  }
+  
+  h1 {
+    font-family: 'Architects Daughter', cursive;
+    margin-top: 40px;
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 30px 20px;
+    font-size: 16px;
+  }
+  
+  .content h2 {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .content h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .faq-box {
+    background-color: #908b7a;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+  }
+  
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #aa2c1d;
+  color: white;
+  text-align: left;
+  padding: 20px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+}
+  
