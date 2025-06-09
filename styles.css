@@ -12,7 +12,6 @@ body {
     position: absolute;
     top: 20px;
     left: 20px;
-    clip-path: inset(20px);
   }
   
   .logo {
