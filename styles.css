@@ -1,12 +1,17 @@
 body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
-     background: url('papel.png') repeat;
     background-size: cover;
     color: #222;
     text-align: center;
     opacity: 0.6;
   }
+.backgrownd{  
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    background: url('papel.png') repeat;}
   
 
   .icon-wrapper {
