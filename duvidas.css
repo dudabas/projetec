@@ -3,18 +3,16 @@ body {
     font-family: 'Quicksand', sans-serif;
   }
   
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+  .top-bar {
     background-color: #aa2c1d;
+    color: white;
+    padding: 10px 40px;
     display: flex;
-    align-items: center;
-    padding: 10px 20px;
     justify-content: space-between;
-    z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    margin-left: auto;
+    border-bottom-left-radius: 70px;
+   
   }
   
 
