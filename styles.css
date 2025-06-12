@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
     background-size: cover;
+    background: url('papel_opaco.png') repeat;
     color: #222;
     text-align: center;
   }
@@ -20,20 +21,20 @@ body {
   }
   
   .logo {
-    width: 60px;
-    height: 60px;
+    width: 300px;
+    height: 150px;
     border-radius: 10px;
     background: #d33;
   }
   
 
   .top-bar {
-    background-color: #aa2c1d;
+    background-color: #d50203;
     color: white;
     padding: 10px 40px;
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 100%;
     margin-left: auto;
     border-bottom-left-radius: 70px;
    
@@ -87,4 +88,18 @@ body {
     font-size: 15px;
     line-height: 1.5;
   }
+  
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d50203;
+  color: white;
+  text-align: left;
+  padding: 20px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+}
   
