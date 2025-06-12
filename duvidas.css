@@ -5,46 +5,51 @@ body {
     background: url('papel_opaco.png') repeat;
   }
   
-  .icon-wrapper {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
-  
-  .logo {
-    width: 300px;
-    height: 150px;
-    border-radius: 10px;
-    background: #d33;
-  }
-  
-
-  .top-bar {
-    background-color: #d50203;
-    color: white;
-    padding: 10px 40px;
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-    margin-left: auto;
-    border-bottom-left-radius: 70px;
-   
-  }
-  
+.top-bar {
+  background-color: #d50203;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
 
 
-  
-  .menu a {
-    margin-left: 20px;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-  }
-  
-  .menu a:hover {
-    text-decoration: underline;
-  }
+
+
+.menu a {
+  margin-left: 50px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+.logo {
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 
   
   h1 {
