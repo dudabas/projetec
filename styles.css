@@ -17,7 +17,7 @@ body {
 .top-bar {
   background-color: #d50203;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
