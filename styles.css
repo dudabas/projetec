@@ -200,7 +200,6 @@ footer {
   /*Editar adm cardapio*/
 .border-editor {
     position: absolute;
-    text-align: center;
     right: 10%;
     justify-content: start;
     border: 1px solid #421161;
@@ -210,5 +209,5 @@ footer {
   
   .editor-page {
     text-align: center;
-    
+    margin-right: 10px;
   }
