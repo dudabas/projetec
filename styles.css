@@ -206,7 +206,8 @@ footer {
     justify-content: start;
     border: 1px solid #421161;
     border-radius: 10px;
-    width: 10%;
+    width: 13%;
+    height: 3%;
   }
   
   .editor-page {
