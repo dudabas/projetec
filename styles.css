@@ -213,3 +213,32 @@ footer {
     text-align: center;
   }
 
+/*Cardapio do dia*/
+.cardapiodia-page-title {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 32px;
+  text-align: center;
+  color: #00004d;
+  margin-top: 3%;
+}
+
+.cardapiodia-page-item {
+  justify-content: start;
+  background: #f4eed3;
+  border: 1px solid #444;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 90%;
+  height: 770px;
+  max-height: 90%;
+  padding: 20px;
+  text-align: center;
+}
+
+.cardapiodia-page-texto {
+  font-size: 19px;
+}
+
+.cardapiodia-img {
+  margin: 3%;
+}
