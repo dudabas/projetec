@@ -101,7 +101,7 @@ footer {
     font-size: 15px;
     line-height: 1.5;
   }
-/*index*/
+/*cardapio*/
 
 .cardapio-page-main {
   padding: 40px;
@@ -113,7 +113,7 @@ footer {
   align-items: center;
 }
 
-.cardapio-page-item {
+div.card {
   display: flex;
   position: relative;
   align-items: center;
@@ -122,14 +122,12 @@ footer {
   border: 1px solid #444;
   border-radius: 10px;
   margin: 20px auto;
-  width: 90%;
-  max-width: 1200px;
+  object-fit: cover;
   height: 220px;
   padding: 20px;
   text-align: left;
   box-sizing: border-box;
 }
-
 
 .cardapio-page-img {
   width: 250px;
@@ -163,6 +161,20 @@ footer {
   flex-direction: column;
   justify-content: center;
 }
+
+.btn.btn-primary {
+  background-color: #c0392b;  /* vermelho escuro */
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 50px;  /* deixa o botão bem arredondado */
+  font-size: 16px;
+  cursor: pointer;
+  --bs-btn-hover-bg: #a93226;  /* cor mais escura no hover */
+  --bs-btn-active-bg: #a93226;  /* cor mais escura no acti*/
+
+}
+
 
 /*duvidas*/
 .duvidas-h1{
