@@ -102,6 +102,10 @@ footer {
     line-height: 1.5;
   }
 /*cardapio*/
+.card-img, .card-img-top {
+  border-radius: var(--bs-card-inner-border-radius);
+}
+
 
 .cardapio-page-main {
   padding: 40px;
