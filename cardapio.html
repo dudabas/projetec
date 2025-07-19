@@ -82,11 +82,39 @@
         </div>
       </div>
     </div>
+        <!-- Sabado -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100">
+        <img src="comida.png" class="card-img-top" alt="Quinta-feira">
+        <div class="card-body">
+          <h5 class="card-title">Sábado</h5>
+          <a href="#" class="btn btn-primary">Clique para acessar o cardápio de Sábado</a>
+        </div>
+      </div>
+    </div>
+
   </section>
 </main>
   <footer>
-
+    Email de contato: Uaimenu@gmail.com
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+   <!--animaçao do rodapé -->
+<script>
+  let lastScrollTop = 0;
+  const footer = document.querySelector("footer");
+
+  window.addEventListener("scroll", function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      // Scrolling down
+      footer.style.animation = "none"; // Reset animation
+      void footer.offsetHeight; // Trigger reflow
+      footer.style.animation = "floatIn 0.8s ease-out forwards"; // Restart animation
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Avoid negative values
+  });
+</script>
 </body>
 </html>
