@@ -53,6 +53,23 @@
   <footer>
     Email de contato: Uaimenu@gmail.com
   </footer>
+   <!--animaçao do rodapé -->
+<script>
+  let lastScrollTop = 0;
+  const footer = document.querySelector("footer");
 
+  window.addEventListener("scroll", function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      // Scrolling down
+      footer.style.animation = "none"; // Reset animation
+      void footer.offsetHeight; // Trigger reflow
+      footer.style.animation = "floatIn 0.8s ease-out forwards"; // Restart animation
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Avoid negative values
+  });
+</script>
 </body>
 </html>
