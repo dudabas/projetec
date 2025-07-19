@@ -20,11 +20,6 @@
     <img src="image.png" alt="Logo" class="logo" />
   </a>
 </div>
-
-
-
-  </div>
-
   <nav class="menu">
     <a href="cardapio.html">Cardápio ▾</a>
     <a href="cardapioadm.html">Administração</a>
@@ -32,34 +27,44 @@
   </nav>
 </header>
 
-
-  <div id:"backgrownd">
-    <div>
-    <main>
-      <div style="margin: 40px 0 10px;">
-        <h1>Uai sô, que menu!</h1>
-      </div>
-
-
-
-      <div class="image-container">
-        <img src="comida.png" alt="Imagem de Comida Mineira" />
-      </div>
-      <section class="intro-text">
-        <h2>Bem-vindo ao Uai Menu! Seu acesso ao cardápio mineiro a um clique de distância</h2>
-        <p>
-          Para consultar o cardápio, vá até a barra de menu e clique na setinha ao lado de “Cardápio”.
-          Em seguida, selecione o dia da semana desejado para ver as opções disponíveis. Navegue entre os dias e
-          descubra o que preparamos para você!
-        </p>
-      </section>
-    </main>
+<main>
+  <div style="margin: 40px 0 10px;">
+    <h1>Uai sô, que menu!</h1>
     </div>
 
-
-</body>
+  <div class="image-container">
+      <img src="comida.png" alt="Imagem de Comida Mineira" />
+    </div>
+    <section class="intro-text">
+      <h2>Bem-vindo ao Uai Menu! Seu acesso ao cardápio mineiro a um clique de distância</h2>
+      <p>
+        Para consultar o cardápio, vá até a barra de menu e clique na setinha ao lado de “Cardápio”.
+        Em seguida, selecione o dia da semana desejado para ver as opções disponíveis. Navegue entre os dias e
+        descubra o que preparamos para você!
+      </p>
+    </section>
+  </main>
 
   <footer>
     Email de contato: Uaimenu@gmail.com
   </footer>
+   <!--animaçao do rodapé -->
+<script>
+  let lastScrollTop = 0;
+  const footer = document.querySelector("footer");
+
+  window.addEventListener("scroll", function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      // Scrolling down
+      footer.style.animation = "none"; // Reset animation
+      void footer.offsetHeight; // Trigger reflow
+      footer.style.animation = "floatIn 0.8s ease-out forwards"; // Restart animation
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Avoid negative values
+  });
+</script>
+</body>
 </html>
