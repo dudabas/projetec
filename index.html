@@ -21,9 +21,15 @@
   </a>
 </div>
   <nav class="menu">
-    <a href="cardapio.html">Cardápio ▾</a>
-    <a href="cardapioadm.html">Administração</a>
-    <a href="duvidas.html">Dúvidas</a>
+    <div class="cardapio-dropdown">
+      <a class="menulink" href="#" id="cardapio-link">Cardápio ▾</a>
+      <div class="card-topbar" id="card-topbar" style="display: none;">
+        <a href="cardapio.html" class="card-link">Ver cardápio do dia</a>
+        <a href="" class="card-link">Receber diariamente</a>
+      </div>
+    </div>
+    <a  class="menulink" href="cardapioadm.html">Administração</a>
+    <a class="menulink" href="duvidas.html">Dúvidas</a>
   </nav>
 </header>
 
@@ -64,6 +70,16 @@
     }
 
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Avoid negative values
+  });
+
+//fazer o a caixa branca aparece
+  const link = document.getElementById("cardapio-link");
+  const cardTopbar = document.getElementById("card-topbar");
+
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    cardTopbar.style.display =
+      cardTopbar.style.display === "block" ? "none" : "block";
   });
 </script>
 </body>
