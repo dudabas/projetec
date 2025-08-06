@@ -46,22 +46,27 @@
             <form>
                 <!-- Email -->
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email:</label>
+                    <label for="email" class="form-label fw-semibold">Email:</label>
                     <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com" required>
                 </div>
                 <!-- Senha -->
                 <div class="mb-3">
-                    <label for="senha" class="form-label">Senha:</label>
+                    <label for="senha" class="form-label fw-semibold">Senha:</label>
                     <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
                 </div>
+                <ul>
+                  <li>Mínimo 8 caracteres</li>
+                  <li>Conter caracteres especiais</li>
+                  <li>Conter números e letras</li>
+                </ul>
                 <!-- Confirmar Senha -->
                 <div class="mb-3">
-                    <label for="confirmarSenha" class="form-label">Confirmar Senha:</label>
+                    <label for="confirmarSenha" class="form-label fw-semibold">Confirmar senha:</label>
                     <input type="password" class="form-control" id="confirmarSenha" placeholder="Confirme sua senha" required>
                 </div>
                  <!-- Senha Administrativa -->
                 <div class="mb-3">
-                    <label for="senhaAdm" class="form-label">Senha Administrativa:</label>
+                    <label for="senhaAdm" class="form-label fw-semibold">Senha Administrativa:</label>
                     <input type="password" class="form-control" id="senhaAdm" placeholder="Somente para administradores">
                 </div>
                 <!-- Botao enviar -->
@@ -105,3 +110,4 @@
 </script>
 </body>
 </html>
+
