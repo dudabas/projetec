@@ -184,6 +184,30 @@ footer {
 #botao-cadastro{
   align-self: center;
 }
+/*entrar*/
+#link-entrar-container a {
+  display: block;
+  text-align: center;
+}
+
+#link-entrar-container a:hover {
+  text-decoration: underline;
+  background-color: transparent;
+}
+/*Validaçao de cliente*/
+
+/*
+quando a validaçao der errado
+
+#validacao{
+  border-color: #c0392b;
+}
+#error{
+  color: #c0392b;
+}
+
+*/
+
 /*cardapio*/
 .card-img, .card-img-top {
   border-radius: var(--bs-card-inner-border-radius);
