@@ -152,11 +152,42 @@ footer {
     font-size: 15px;
     line-height: 1.5;
   }
+/*cadastrar*/
+.image-container-cadastrar img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+.col-md-6 .card {
+  display: flex;
+  position: relative;
+  align-items:normal ;
+  justify-content: start;
+  background: white;
+  border: 0px ;
+  border-radius: 10px;
+  margin: 20px auto;
+  object-fit: cover;
+  height: auto;
+  padding: 20px;
+  text-align: left;
+  box-sizing: border-box;
+}
+#titulo-cadastro{
+  align-self:center;
+}
+.card form input{
+  border-radius: 50px;
+  background-color: rgba(217, 217, 217, 1);
+}
+  
+#botao-cadastro{
+  align-self: center;
+}
 /*cardapio*/
 .card-img, .card-img-top {
   border-radius: var(--bs-card-inner-border-radius);
 }
-
 
 .cardapio-page-main {
   padding: 40px;
