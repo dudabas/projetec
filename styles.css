@@ -223,7 +223,10 @@ quando a validaçao der errado
   flex-direction: column;
   align-items: center;
 }
-
+.card-body{
+  padding: 1rem 1rem 0px;
+  margin-bottom: 0px;
+}
 #dia {
   display: flex;
   position: relative;
