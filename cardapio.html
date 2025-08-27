@@ -19,7 +19,7 @@
       <a class="menulink" href="#" id="cardapio-link">Cardápio ▾</a>
       <div class="card-topbar" id="card-topbar" style="display: none;">
         <a href="cardapio.html" class="card-link">Ver cardápio do dia</a>
-        <a href="" class="card-link">Receber diariamente</a>
+        <a href="cadastro_cliente.html" class="card-link">Receber diariamente</a>
       </div>
     </div>
     <a  class="menulink" href="cardapioadm.html">Administração</a>
@@ -31,7 +31,7 @@
   <section class="row g-4">
     <!-- Segunda-feira -->
     <div class="col-md-6 col-lg-4">
-      <div class="card h-100">
+      <div class="card h-100" id="dia">
         <img src="comida.png" class="card-img-top" alt="Segunda-feira">
         <div class="card-body">
           <h5 class="card-title">Segunda-feira</h5>
@@ -42,7 +42,7 @@
 
     <!-- Terça-feira -->
     <div class="col-md-6 col-lg-4">
-      <div class="card h-100">
+      <div class="card h-100" id="dia">
         <img src="comida.png" class="card-img-top" alt="Terça-feira">
         <div class="card-body">
           <h5 class="card-title">Terça-feira</h5>
@@ -53,7 +53,7 @@
 
     <!-- Quarta-feira -->
     <div class="col-md-6 col-lg-4">
-      <div class="card h-100">
+      <div class="card h-100" id="dia">
         <img src="comida.png" class="card-img-top" alt="Quarta-feira">
         <div class="card-body">
           <h5 class="card-title">Quarta-feira</h5>
@@ -75,7 +75,7 @@
 
     <!-- Sexta-feira -->
     <div class="col-md-6 col-lg-4">
-      <div class="card h-100">
+      <div class="card h-100" id="dia">
         <img src="comida.png" class="card-img-top" alt="Sexta-feira">
         <div class="card-body">
           <h5 class="card-title">Sexta-feira</h5>
@@ -84,8 +84,8 @@
       </div>
     </div>
         <!-- Sabado -->
-    <div class="col-md-6 col-lg-4" >
-      <div class="card h-100">
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100" id="dia">
         <img src="comida.png" class="card-img-top" alt="Quinta-feira">
         <div class="card-body">
           <h5 class="card-title">Sábado</h5>
@@ -116,7 +116,15 @@
 
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Avoid negative values
   });
+  //fazer o a caixa branca aparece
+  const link = document.getElementById("cardapio-link");
+  const cardTopbar = document.getElementById("card-topbar");
+
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    cardTopbar.style.display =
+      cardTopbar.style.display === "block" ? "none" : "block";
+  });
 </script>
 </body>
 </html>
-
