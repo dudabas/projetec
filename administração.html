@@ -27,6 +27,15 @@
 
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Avoid negative values
   });
+  //fazer o a caixa branca aparece
+  const link = document.getElementById("cardapio-link");
+  const cardTopbar = document.getElementById("card-topbar");
+
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    cardTopbar.style.display =
+      cardTopbar.style.display === "block" ? "none" : "block";
+  });
 </script>
 </body>
 </html>
