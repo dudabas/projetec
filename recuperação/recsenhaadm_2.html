@@ -14,8 +14,8 @@
 <body>
 <header class="top-bar">
   <div class="icon-wrapper">
-  <a href="index.html">
-    <img src="image.png" alt="Logo" class="logo" />
+  <a href="paginas de controle/index.html">
+    <img src="../imagens/image.png" alt="Logo" class="logo" />
   </a>
 </div>
   <nav class="menu">
@@ -24,7 +24,6 @@
       <div class="card-topbar" id="card-topbar" style="display: none;">
         <a href="cardapio.html" class="card-link">Ver cardápio do dia</a>
         <a href="cadastro_cliente.html" class="card-link">Receber diariamente</a>
-      </div>
     </div>
     <a  class="menulink" href="cardapioadm.html">Administração</a>
     <a class="menulink" href="duvidas.html">Dúvidas</a>
@@ -36,41 +35,21 @@
         <!-- Coluna da Imagem -->
         <div class="col-md-6 mb-4 mb-md-0">
             <div class="image-container-cadastrar">
-                <img src="espaguete.png" alt="Imagem de Comida Mineira" class="img-fluid rounded shadow" />
+                <img src="../imagens/espaguete.png" alt="Imagem de Comida Mineira" class="img-fluid rounded shadow" />
             </div>
         </div>
         <!-- Coluna do Formulário -->
     <div class="col-md-6" >
         <div class="card shadow p-4" id="card-formulario">
-            <h2 class="card-title mb-4" id="titulo-cadastro">Cadastro de Usuário</h2>
+            <h2 class="card-title mb-4" id="titulo-cadastro" >Validação</h2>
             <form>
-                <!-- Email -->
+                <p class="fs-5 fw-semibold text-center">Insira o código aqui:</p>
+                <!-- Vaidacao -->
                 <div class="mb-3">
-                    <label for="email" class="form-label fw-semibold">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com" required>
-                </div>
-                <!-- Senha -->
-                <div class="mb-3">
-                    <label for="senha" class="form-label fw-semibold">Senha:</label>
-                    <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
-                </div>
-                <ul>
-                  <li>Mínimo 8 caracteres</li>
-                  <li>Conter caracteres especiais</li>
-                  <li>Conter números e letras</li>
-                </ul>
-                <!-- Confirmar Senha -->
-                <div class="mb-3">
-                    <label for="confirmarSenha" class="form-label fw-semibold">Confirmar senha:</label>
-                    <input type="password" class="form-control" id="confirmarSenha" placeholder="Confirme sua senha" required>
-                </div>
-                 <!-- Senha Administrativa -->
-                <div class="mb-3">
-                    <label for="senhaAdm" class="form-label fw-semibold">Senha Administrativa:</label>
-                    <input type="password" class="form-control" id="senhaAdm" placeholder="Digite a senha para administradores">
+                    <input type="email" class="form-control" placeholder="Código" required>
                 </div>
                 <!-- Botao enviar -->
-                <a href="cardapioadm.html" button type="submit" class="btn btn-primary w-100" id="botao-cadastro">Enviar</a>
+                <a href="recsenhaadm_3.html" type="submit" class="btn btn-primary w-100" id="botao-cadastro">Enviar</a>
             </form>
         </div>
     </div>
@@ -110,3 +89,5 @@
 </script>
 </body>
 </html>
+
+
