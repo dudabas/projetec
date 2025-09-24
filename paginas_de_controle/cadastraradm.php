@@ -1,11 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root"; 
-$password = "";      
-$dbname = "uaimenu";
-
-
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli("localhost", "root", "", "uaimenu");
 
 
 if ($conn->connect_error) {
@@ -46,3 +40,4 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 $conn->close();
 
 ?>
+
