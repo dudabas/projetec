@@ -8,12 +8,10 @@ id_cliente_rest int AUTO_INCREMENT primary key
 
 create table if not exists adm(
 email varchar (50),
-senha_adm char (10),
+senha_adm char (10) NOT NULL DEFAULT '1234',
 senha_propria varchar (20),
-id_adm int primary key
+id_adm int NOT NULL AUTO_INCREMENT primary key
 );
-
-ALTER TABLE adm MODIFY id_adm INT NOT NULL AUTO_INCREMENT;
 
 create table if not exists cardapio_dia(
 dia ENUM('segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado') primary key
