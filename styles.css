@@ -152,6 +152,35 @@ footer {
     font-size: 15px;
     line-height: 1.5;
   }
+/*dias da semana*/
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+
+
+.checkbox-wrapper {
+  display: block;
+  border: 1.5px solid #007bff;
+  border-radius: 6px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  user-select: none; 
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+}  
+
 /*cadastrar*/
 .image-container-cadastrar img {
   width: 100%;
