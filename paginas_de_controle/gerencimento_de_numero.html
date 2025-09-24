@@ -23,8 +23,7 @@
       <a class="menulink" href="#" id="cardapio-link">Cardápio ▾</a>
       <div class="card-topbar" id="card-topbar" style="display: none;">
         <a href="cardapio.html" class="card-link">Ver cardápio do dia</a>
-        <a href="cadastro_cliente.html" class="card-link">Receber diariamente</a>
-        <a href="apagar_numero.html" class="card-link">Remover número</a>
+        <a href="gerencimento_de_numero.html" class="card-link">Receber diariamente</a>
       </div>
     </div>
     <a  class="menulink" href="cardapioadm.html">Administração</a>
@@ -41,19 +40,16 @@
             </div>
         </div>
         <!-- Coluna do Formulário -->
-    <div class="col-md-6" >
+    <div class="col-md-6 " >
         <div class="card shadow p-4 cadastros" >
-            <h2 class="card-title mb-4" id="titulo-cadastro" >Envio diário</h2>
-            <form>
-                <!-- Numero -->
-                <div class="mb-3">
-                    <p class="fs-5 fw-semibold text-center">Digite seu número do Whatsapp</p>
-                    <input type="tel" class="form-control" id="Numero" placeholder="(xx) xxxxx-xxxx" required>
-
-                </div>
+            <h2 class="card-title mb-4" id="titulo-cadastro" >Gerenciar numero</h2>
+            <!-- botoes -->
                 <!-- Botao enviar -->
-                <a href="Validacao_cliente.html" type="submit" class="btn btn-primary w-100" id="botao-cadastro">Enviar</a>
-            </form>
+                <div class="d-flex justify-content-between">
+			<a href="cadastro_cliente.html" class="btn btn-primary me-2 flex-fill" id="botao-cadastro">Adicionar número</a>
+  			<a href="apagar_numero.html" class="btn btn-primary flex-fill" id="botao-cadastro">Remover número</a>
+			</div>
+
         </div>
     </div>
 </div>
@@ -92,5 +88,4 @@
 </script>
 </body>
 </html>
-
 
