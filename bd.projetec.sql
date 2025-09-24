@@ -13,6 +13,8 @@ senha_propria varchar (20),
 id_adm int primary key
 );
 
+ALTER TABLE adm MODIFY id_adm INT NOT NULL AUTO_INCREMENT;
+
 create table if not exists cardapio_dia(
 dia ENUM('segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado') primary key
 );
@@ -56,5 +58,6 @@ foreign key (id_adm) references adm (id_adm)
 );
 SHOW tables;
 
+select * from adm;
 
 
