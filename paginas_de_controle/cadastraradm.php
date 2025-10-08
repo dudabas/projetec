@@ -17,7 +17,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         die("Erro: as senhas não coincidem.");
     }
 
-    // Hash da senha (recomendado para segurança)
     $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
     // Inserir no banco
@@ -40,4 +39,5 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 $conn->close();
 
 ?>
+
 
