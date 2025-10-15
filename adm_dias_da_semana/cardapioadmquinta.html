@@ -6,6 +6,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Architects+Daughter&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
+
 </head>
 <body>
 <header class="top-bar">
@@ -37,73 +38,98 @@
       <div class="mt-auto text-center">
         <button class="btn btn-uai btn-sm">Editar imagem</button>
       </div>
-    </div>
+    
+      <div class="row g-4">
+        
+        <div class="col-md-4" id="card-carnes">
+          <div class="card h-100 d-flex flex-column">
+            <div class="card-header bg-danger text-white text-center fw-bold">Carnes</div>
+            <div class="card-body d-flex flex-column">
+              <ul id="lista-carnes" class="list-unstyled">
+                <li>- Bife de boi acebolado</li>
+              </ul>
+              <textarea id="area-carnes" class="form-control" style="display: none;"></textarea>
+              
+              <div class="mt-auto text-center pt-3">
+                <button id="btn-editar-carnes" class="btn btn-uai btn-sm" onclick="habilitarEdicao('carnes')">
+                    Editar texto
+                </button>
+                <button id="btn-salvar-carnes" class="btn btn-success btn-sm" onclick="salvarEdicao('carnes')" style="display:none;">
+                    Salvar
+                </button>
+                <button id="btn-cancelar-carnes" class="btn btn-secondary btn-sm" onclick="cancelarEdicao('carnes')" style="display:none;">
+                    Cancelar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <div class="row g-4">
-      <!-- Card Carnes -->
-      <div class="col-md-4">
-        <div class="card h-100 d-flex flex-column">
-          <div class="card-header bg-danger text-white text-center fw-bold">Carnes</div>
-          <div class="card-body d-flex flex-column">
-            <ul class="list-unstyled">
-              <li>- Bife de boi acebolado</li>
-            </ul>
-            <!-- botao -->
-            <div class="mt-auto text-center">
-              <button class="btn btn-uai btn-sm">Editar texto</button>
+        <div class="col-md-4" id="card-acompanhamentos">
+          <div class="card h-100 d-flex flex-column">
+            <div class="card-header bg-warning text-dark text-center fw-bold">Acompanhamentos</div>
+            <div class="card-body d-flex flex-column">
+              <ul id="lista-acompanhamentos" class="list-unstyled">
+                <li>- Arroz branco</li>
+                <li>- Feijão carioca</li>
+                <li>- Farinha de mandioca</li>
+                <li>- Couve refogada</li>
+              </ul>
+              <textarea id="area-acompanhamentos" class="form-control" style="display: none;"></textarea>
+              
+              <div class="mt-auto text-center pt-3">
+                <button id="btn-editar-acompanhamentos" class="btn btn-uai btn-sm" onclick="habilitarEdicao('acompanhamentos')">
+                    Editar texto
+                </button>
+                <button id="btn-salvar-acompanhamentos" class="btn btn-success btn-sm" onclick="salvarEdicao('acompanhamentos')" style="display:none;">
+                    Salvar
+                </button>
+                <button id="btn-cancelar-acompanhamentos" class="btn btn-secondary btn-sm" onclick="cancelarEdicao('acompanhamentos')" style="display:none;">
+                    Cancelar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" id="card-saladas">
+          <div class="card h-100 d-flex flex-column">
+            <div class="card-header bg-success text-white text-center fw-bold">Saladas</div>
+            <div class="card-body d-flex flex-column">
+              <ul id="lista-saladas" class="list-unstyled">
+                <li>- Alface com tomate</li>
+              </ul>
+              <textarea id="area-saladas" class="form-control" style="display: none;"></textarea>
+              
+              <div class="mt-auto text-center pt-3">
+                <button id="btn-editar-saladas" class="btn btn-uai btn-sm" onclick="habilitarEdicao('saladas')">
+                    Editar texto
+                </button>
+                <button id="btn-salvar-saladas" class="btn btn-success btn-sm" onclick="salvarEdicao('saladas')" style="display:none;">
+                    Salvar
+                </button>
+                <button id="btn-cancelar-saladas" class="btn btn-secondary btn-sm" onclick="cancelarEdicao('saladas')" style="display:none;">
+                    Cancelar
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Card Acompanhamentos -->
-      <div class="col-md-4">
-        <div class="card h-100 d-flex flex-column">
-          <div class="card-header bg-warning text-dark text-center fw-bold">Acompanhamentos</div>
-          <div class="card-body d-flex flex-column">
-            <ul class="list-unstyled">
-              <li>- Arroz branco</li>
-              <li>- Feijão carioca</li>
-              <li>- Farinha de mandioca</li>
-            </ul>
-            <!-- botao -->
-            <div class="mt-auto text-center">
-              <button class="btn btn-uai btn-sm">Editar texto</button>
-            </div>
-          </div>
-        </div>
+      <div class="text-center mt-4">
+        <button class="btn btn-publicar">Publicar</button>
       </div>
-
-      <!-- Card Saladas -->
-      <div class="col-md-4">
-        <div class="card h-100 d-flex flex-column">
-          <div class="card-header bg-success text-white text-center fw-bold">Saladas</div>
-          <div class="card-body d-flex flex-column">
-            <ul class="list-unstyled">
-              <li>- Alface com tomate</li>
-            </ul>
-            <!-- botao -->
-            <div class="mt-auto text-center">
-              <button class="btn btn-uai btn-sm">Editar texto</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- botao publica -->
-    <div class="text-center mt-4">
-      <button class="btn btn-publicar">Publicar</button>
     </div>
   </div>
 </main>
 
-  <footer class="bg-danger text-white text-center p-3 mt-5">
-    Email de contato: Uaimenu@gmail.com
-  </footer>
+<footer class="bg-danger text-white text-center p-3 mt-5">
+  Email de contato: Uaimenu@gmail.com
+</footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
+
+<script>
     let lastScrollTop = 0;
     const footer = document.querySelector("footer");
 
@@ -116,15 +142,16 @@
       }
       lastScrollTop = Math.max(0, scrollTop);
     });
-    //fazer o a caixa branca aparece
-  const link = document.getElementById("cardapio-link");
-  const cardTopbar = document.getElementById("card-topbar");
+    
+    const link = document.getElementById("cardapio-link");
+    const cardTopbar = document.getElementById("card-topbar");
 
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
-    cardTopbar.style.display =
-      cardTopbar.style.display === "block" ? "none" : "block";
-  });
-  </script>
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      cardTopbar.style.display =
+        cardTopbar.style.display === "block" ? "none" : "block";
+    });
+</script>
+<script src="js_adm_dias.js"></script>
 </body>
 </html>

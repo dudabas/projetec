@@ -369,6 +369,10 @@ quando a validaçao der errado
   }
 
 /*Cardapio do dia*/
+.card-cardapio{
+  border-radius: 10px;
+
+}
 .card-header:first-child  {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -406,18 +410,30 @@ quando a validaçao der errado
 }
 /*Cardapio do dia adm*/
 .btn-uai {
-  background-color: #f4eed3;
-  color: #4a356d;
-  border: 1px solid #444;
+  background-color: #6c757d; 
+  color: white;
+  border: none;
+}
+.btn-uai {
+  background-color: #6c757d; 
+  color: white;
+  border: none;
   border-radius: 10px;
+  margin-bottom: 15px;
   font-size: 14px;
   padding: 6px 14px;
   transition: background-color 0.3s ease;
 }
 
 .btn-uai:hover {
-  background-color: #e7dfc4;
-  border: 1px solid #444;
+  background-color: #7c848b; 
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  padding: 6px 14px;
+  transition: background-color 0.3s ease;
 }
 
 .btn-publicar {
