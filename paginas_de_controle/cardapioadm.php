@@ -36,10 +36,10 @@
         <img src="../imagens/comida.png" class="card-img-top" alt="Segunda-feira">
         <div class="card-body">
           <h5 class="card-title">Segunda-feira</h5>
-          <a href="../adm_dias_da_semana/cardapiodia.html" class="btn btn-primary">Clique para acessar o cardápio de segunda-feira</a>
+          <a href="../dias_da_semana/cardapiosegunda.html" class="btn btn-primary">Clique para acessar o cardápio de segunda-feira</a>
         </div>
         <div class="mt-auto text-center">
-          <a href="../adm_dias_da_semana/cardapioadmsegunda.html" class="btn btn-uai btn-sm" >Editar Cardápio</a>
+          <a href="../adm_dias_da_semana/cardapioadmsegunda.html" class="btn btn-uai btn-sm">Editar Cardápio</a>
         </div>
       </div>
     </div>
@@ -50,7 +50,7 @@
         <img src="../imagens/comida.png" class="card-img-top" alt="Terça-feira">
         <div class="card-body">
           <h5 class="card-title">Terça-feira</h5>
-          <a href="../adm_dias_da_semana/cardapioterca.html" class="btn btn-primary">Clique para acessar o cardápio de terça-feira</a>
+          <a href="../dias_da_semana/cardapioterca.html" class="btn btn-primary">Clique para acessar o cardápio de terça-feira</a>
         </div>
         <div class="mt-auto text-center">
           <a href="../adm_dias_da_semana/cardapioadmterca.html" class="btn btn-uai btn-sm" >Editar Cardápio</a>
@@ -64,7 +64,7 @@
         <img src="../imagens/comida.png" class="card-img-top" alt="Quarta-feira">
         <div class="card-body">
           <h5 class="card-title">Quarta-feira</h5>
-          <a href="../adm_dias_da_semana/cardapioquarta.html" class="btn btn-primary">Clique para acessar o cardápio de quarta-feira</a>
+          <a href="../dias_da_semana/cardapioquarta.html" class="btn btn-primary">Clique para acessar o cardápio de quarta-feira</a>
         </div>
         <div class="mt-auto text-center">
           <a href="../adm_dias_da_semana/cardapioadmquarta.html" class="btn btn-uai btn-sm" >Editar Cardápio</a>
@@ -78,7 +78,7 @@
         <img src="../imagens/comida.png" class="card-img-top" alt="Quinta-feira">
         <div class="card-body">
           <h5 class="card-title">Quinta-feira</h5>
-          <a href="../adm_dias_da_semana/cardapioquinta.html" class="btn btn-primary">Clique para acessar o cardápio de quinta-feira</a>
+          <a href="../dias_da_semana/cardapioquinta.html" class="btn btn-primary">Clique para acessar o cardápio de quinta-feira</a>
         </div>
         <div class="mt-auto text-center">
           <a href="../adm_dias_da_semana/cardapioadmquinta.html" class="btn btn-uai btn-sm" >Editar Cardápio</a>
@@ -92,7 +92,7 @@
         <img src="../imagens/comida.png" class="card-img-top" alt="Sexta-feira">
         <div class="card-body">
           <h5 class="card-title">Sexta-feira</h5>
-          <a href="../adm_dias_da_semana/cardapiosexta.html" class="btn btn-primary">Clique para acessar o cardápio de sexta-feira</a>
+          <a href="../dias_da_semana/cardapiosexta.html" class="btn btn-primary">Clique para acessar o cardápio de sexta-feira</a>
         </div>
         <div class="mt-auto text-center">
           <a href="../adm_dias_da_semana/cardapioadmsexta.html" class="btn btn-uai btn-sm" >Editar Cardápio</a>
@@ -105,7 +105,7 @@
         <img src="../imagens/comida.png" class="card-img-top" alt="Quinta-feira">
         <div class="card-body">
           <h5 class="card-title">Sábado</h5>
-          <a href="../adm_dias_da_semana/cardapioadmsabado.html" class="btn btn-primary">Clique para acessar o cardápio de Sábado</a>
+          <a href="../dias_da_semana/cardapiosabado.html" class="btn btn-primary">Clique para acessar o cardápio de Sábado</a>
         </div>
         <div class="mt-auto text-center">
           <a href="../adm_dias_da_semana/cardapioadmsabado.html" class="btn btn-uai btn-sm" >Editar Cardápio</a>
