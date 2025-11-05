@@ -57,8 +57,7 @@
 
                 </div>
                 <div class="mb-3" id="link-entrar-container">
-                    <a href="../recuperação/recsenhaadm_1.html" class="card-link d-block mb-1">Esqueci minha senha</a>
-                    <a href="cadastraradm.html" class="card-link d-block">Criar conta</a>
+                    <a href="cadastraradm.php" class="card-link d-block">Criar conta</a>
                   </div>
                 <!-- Botao enviar -->
                 <button type="submit" class="btn btn-primary w-100" id="botao-cadastro">Enviar</button>
