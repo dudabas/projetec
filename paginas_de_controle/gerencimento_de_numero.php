@@ -47,8 +47,8 @@
             <!-- botoes -->
                 <!-- Botao enviar -->
                 <div class="d-flex justify-content-between">
-			<a href="cadastro_cliente.html" class="btn btn-primary me-2 flex-fill" id="botao-cadastro">Adicionar número</a>
-  			<a href="apagar_numero.html" class="btn btn-primary flex-fill" id="botao-cadastro">Remover número</a>
+			<a href="cadastro_cliente.php" class="btn btn-primary me-2 flex-fill" id="botao-cadastro">Adicionar número</a>
+  			<a href="apagar_numero.php" class="btn btn-primary flex-fill" id="botao-cadastro">Remover número</a>
 			</div>
 
         </div>
@@ -89,6 +89,7 @@
 </script>
 </body>
 </html>
+
 
 
 
