@@ -38,3 +38,5 @@ INSERT IGNORE INTO salada (salada, dia) VALUES
 ('Repolho e tomate cereja', 'quinta-feira'),
 ('Mix de folhas com molho', 'sexta-feira'),
 ('Rúcula e cenoura', 'sábado');
+
+ALTER TABLE cardapio_dia ADD COLUMN imagem VARCHAR(255) NULL;
