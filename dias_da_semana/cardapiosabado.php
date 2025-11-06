@@ -1,32 +1,31 @@
 <?php
-
 require_once __DIR__ . '/../edicao/config/database.php';
-require_once __DIR__ . '/../edicao/app/models/Carne.php';
-require_once __DIR__ . '/../edicao/app/models/Acompanhamento.php';
-require_once __DIR__ . '/../edicao/app/models/Salada.php';
 
-$dia = 'sábado';
+$conn = Database::conectar();
+$dia = "sábado";
 
-
-function split_items($text) {
-    if ($text === null) return [];
-   
-    $parts = preg_split("/\r\n|\n|\r|,/", $text);
-    $items = array_map('trim', $parts);
-    
-    return array_filter($items, function($v){ return $v !== ''; });
+function buscarTexto($conn, $tabela, $campo, $dia) {
+  $sql = $conn->prepare("SELECT $campo FROM $tabela WHERE dia = :dia LIMIT 1");
+  $sql->bindParam(':dia', $dia);
+  $sql->execute();
+  $texto = $sql->fetchColumn();
+  return $texto ? array_filter(array_map('trim', explode("\n", $texto))) : [];
 }
 
+$carne_items = buscarTexto($conn, "carne", "carne", $dia);
+$acomp_items = buscarTexto($conn, "acompanhamento", "acompanhamento", $dia);
+$salada_items = buscarTexto($conn, "salada", "salada", $dia);
 
-$carne_text = Carne::buscar($dia);
-$acomp_text  = Acompanhamento::buscar($dia);
-$salada_text = Salada::buscar($dia);
+// imagem
+$img = $conn->prepare("SELECT imagem FROM cardapio_dia WHERE dia = :dia LIMIT 1");
+$img->bindParam(':dia', $dia);
+$img->execute();
+$imagem = $img->fetchColumn();
 
-
-$carne_items  = split_items($carne_text);
-$acomp_items  = split_items($acomp_text);
-$salada_items = split_items($salada_text);
+// caminho final
+$imagemExibida = $imagem ? "../edicao/" . $imagem : "../imagens/comida.png";
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -58,12 +57,14 @@ $salada_items = split_items($salada_text);
 </header>
 
   <main class="container py-5">
-  <h1 class="cardapiodia-page-title mb-4">Segunda-feira</h1>
+  <h1 class="cardapiodia-page-title mb-4">Sábado</h1>
 
   <div class="cardapiodia-page-item">
     <div class="text-center mb-4">
       <p class="lead fs-4 fw-semibold">Cardápio do dia:</p>
-      <img src="../imagens/comida.png" alt="Prato do dia" class="img-fluid rounded cardapiodia-img">
+
+      <!-- IMAGEM DO BANCO -->
+      <img src="<?= $imagemExibida ?>" alt="Prato do dia" class="img-fluid rounded cardapiodia-img">
     </div>
 
     <div class="row g-4">
@@ -80,7 +81,6 @@ $salada_items = split_items($salada_text);
                 <li>- Em breve</li>
               <?php endif; ?>
             </ul>
-            
           </div>
         </div>
       </div>
@@ -126,21 +126,8 @@ $salada_items = split_items($salada_text);
     Email de contato: Uaimenu@gmail.com
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    let lastScrollTop = 0;
-    const footer = document.querySelector("footer");
-
-    window.addEventListener("scroll", function () {
-      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop > lastScrollTop) {
-        footer.style.animation = "none";
-        void footer.offsetHeight;
-        footer.style.animation = "floatIn 0.8s ease-out forwards";
-      }
-      lastScrollTop = Math.max(0, scrollTop);
-    });
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
   const link = document.getElementById("cardapio-link");
   const cardTopbar = document.getElementById("card-topbar");
 
@@ -149,6 +136,7 @@ $salada_items = split_items($salada_text);
     cardTopbar.style.display =
       cardTopbar.style.display === "block" ? "none" : "block";
   });
-  </script>
+</script>
 </body>
 </html>
+
