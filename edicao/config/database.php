@@ -1,7 +1,7 @@
 <?php
 class Database {
     private static $host = 'localhost';
-    private static $db   = 'uaiMenu';
+    private static $db   = 'uaiMenu'; 
     private static $user = 'root';
     private static $pass = '';
     private static $conn;
@@ -10,7 +10,7 @@ class Database {
         if (!self::$conn) {
             try {
                 self::$conn = new PDO(
-                    "mysql:host=" . self::$host . ";dbname=" . self::$db,
+                    "mysql:host=".self::$host.";dbname=".self::$db.";charset=utf8mb4",
                     self::$user,
                     self::$pass
                 );
@@ -22,4 +22,4 @@ class Database {
         return self::$conn;
     }
 }
-?>
+

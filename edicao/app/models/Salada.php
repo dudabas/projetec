@@ -7,15 +7,25 @@ class Salada {
         $stmt = $conn->prepare("SELECT salada FROM salada WHERE dia = :dia LIMIT 1");
         $stmt->bindParam(':dia', $dia);
         $stmt->execute();
-        return $stmt->fetch(PDO::FETCH_ASSOC)['salada'] ?? '';
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $row['salada'] ?? '';
     }
 
-    public static function atualizar($dia, $nova) {
+    public static function atualizar($dia, $texto) {
         $conn = Database::conectar();
-        $stmt = $conn->prepare("UPDATE salada SET salada = :salada WHERE dia = :dia");
-        $stmt->bindParam(':salada', $nova);
+        $stmt = $conn->prepare("UPDATE salada SET salada = :texto WHERE dia = :dia");
+        $stmt->bindParam(':texto', $texto);
         $stmt->bindParam(':dia', $dia);
-        return $stmt->execute();
+        $ok = $stmt->execute();
+        if (!$ok || $stmt->rowCount() === 0) {
+            try {
+                $ins = $conn->prepare("INSERT INTO salada (salada, dia) VALUES (:texto, :dia)");
+                $ins->bindParam(':texto', $texto);
+                $ins->bindParam(':dia', $dia);
+                $ins->execute();
+                $ok = true;
+            } catch (Exception $e) {}
+        }
+        return (bool)$ok;
     }
 }
-?>
