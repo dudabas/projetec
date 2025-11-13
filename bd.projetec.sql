@@ -1,10 +1,18 @@
 create database if not exists uaiMenu;
 use uaiMenu;
 
-create table if not exists cliente_rest(
-telefone int,
-id_cliente_rest int AUTO_INCREMENT primary key
+
+
+CREATE TABLE IF NOT EXISTS cliente_rest (
+    id_cliente_rest INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    telefone VARCHAR(20) NOT NULL
 );
+CREATE TABLE IF NOT EXISTS controle_envio (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ultima_atualizacao DATETIME NOT NULL
+);
+
 
 create table if not exists adm(
 email varchar (50),
@@ -13,6 +21,10 @@ senha_propria varchar (20),
 id_adm int NOT NULL AUTO_INCREMENT primary key
 );
 
+CREATE TABLE IF NOT EXISTS controle_envio (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ultima_atualizacao DATETIME NOT NULL
+);
 create table if not exists cardapio_dia(
 dia ENUM('segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado') primary key
 );
