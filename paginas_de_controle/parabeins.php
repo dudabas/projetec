@@ -1,3 +1,5 @@
+<?php require '../config.php';
+require INC_PATH . '/header.php';?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -12,25 +14,7 @@
 </head>
 
 <body>
-<header class="top-bar">
-  <div class="icon-wrapper">
-  <a href="../index.html">
-    <img src="../imagens/image.png" alt="Logo" class="logo" />
-  </a>
-</div>
-  <nav class="menu">
-    <div class="cardapio-dropdown">
-      <a class="menulink" href="#" id="cardapio-link">Cardápio ▾</a>
-      <div class="card-topbar" id="card-topbar" style="display: none;">
-        <a href="../cardapio.html" class="card-link">Ver cardápio do dia</a>
-        <a href="../paginas_de_controle/cadastro_cliente.php" class="card-link">Receber diariamente</a>
-        <a href="../paginas_de_controle/apagar_numero.php" class="card-link">Remover Número</a>
-      </div>
-    </div>
-    <a  class="menulink" href="../paginas_de_controle/cadastraradm.php">Administração</a>
-    <a class="menulink" href="../paginas_de_controle/duvidas.html">Dúvidas</a>
-  </nav>
-</header>
+
 
 <main class="container my-5">
     <div class="row align-items-center">
@@ -45,7 +29,7 @@
         <div class="card shadow p-4" id="card-formulario">
             <h2 class="card-title mb-4" id="titulo-cadastro" >Parabéns</h2>
             <!-- Parabains -->
-            <form action="seu_script_de_envio.php" method="POST">
+            <form action="cardapio.php" method="POST">
               <div class="mb-3">
                 <p class="fs-5 fw-semibold text-center">
                   Quais dias você gostaria de receber o cardápio em seu Whatsapp.

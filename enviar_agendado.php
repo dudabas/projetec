@@ -34,7 +34,7 @@ if ($clientes->num_rows == 0) {
 // =============================
 // ENVIAR MENSAGEM
 // =============================
-$linkCardapio = "https://dudabas.github.io/cardapio.html";
+$linkCardapio = "https://dudabas.github.io/cardapio.php";
 $dataHoje = date("d/m/Y");
 
 while ($c = $clientes->fetch_assoc()) {

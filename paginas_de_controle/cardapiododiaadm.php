@@ -1,3 +1,5 @@
+<?php require '../config.php';
+require INC_PATH . '/header.php';?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
