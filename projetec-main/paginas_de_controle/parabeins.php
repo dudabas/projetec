@@ -1,0 +1,113 @@
+<?php require '../config.php';
+require INC_PATH . '/header.php';?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uai Menu</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Architects+Daughter&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+<main class="container my-5">
+    <div class="row align-items-center">
+        <!-- Coluna da Imagem -->
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div class="image-container-cadastrar">
+                <img src="espaguete.png" alt="Imagem de Comida Mineira" class="img-fluid rounded shadow" />
+            </div>
+        </div>
+        <!-- Coluna do Formulário -->
+    <div class="col-md-6" >
+        <div class="card shadow p-4" id="card-formulario">
+            <h2 class="card-title mb-4" id="titulo-cadastro" >Parabéns</h2>
+            <!-- Parabains -->
+            <form action="seu_script_de_envio.php" method="POST">
+              <div class="mb-3">
+                <p class="fs-5 fw-semibold text-center">
+                  Quais dias você gostaria de receber o cardápio em seu Whatsapp.
+                </p>
+              </div>
+            
+              <div class="mb-4">
+                <div class="form-check border rounded p-3 mb-3">
+                  <input class="form-check-input" type="checkbox" name="dias[]" value="Segunda-feira" id="segunda">
+                  <label class="form-check-label" for="segunda">Segunda-feira</label>
+                </div>
+                <div class="form-check border rounded p-3 mb-3">
+                  <input class="form-check-input" type="checkbox" name="dias[]" value="Terça-feira" id="terca">
+                  <label class="form-check-label" for="terca">Terça-feira</label>
+                </div>
+                <div class="form-check border rounded p-3 mb-3">
+                  <input class="form-check-input" type="checkbox" name="dias[]" value="Quarta-feira" id="quarta">
+                  <label class="form-check-label" for="quarta">Quarta-feira</label>
+                </div>
+                <div class="form-check border rounded p-3 mb-3">
+                  <input class="form-check-input" type="checkbox" name="dias[]" value="Quinta-feira" id="quinta">
+                  <label class="form-check-label" for="quinta">Quinta-feira</label>
+                </div>
+                <div class="form-check border rounded p-3 mb-3">
+                  <input class="form-check-input" type="checkbox" name="dias[]" value="Sexta-feira" id="sexta">
+                  <label class="form-check-label" for="sexta">Sexta-feira</label>
+                </div>
+                <div class="form-check border rounded p-3 mb-3">
+                  <input class="form-check-input" type="checkbox" name="dias[]" value="Sábado" id="sabado">
+                  <label class="form-check-label" for="sabado">Sábado</label>
+                </div>
+                <div class="form-check border rounded p-3 mb-3">
+                  <input class="form-check-input" type="checkbox" name="dias[]" value="Domingo" id="domingo">
+                  <label class="form-check-label" for="domingo">Domingo</label>
+                </div>
+              </div>
+            
+              <button type="submit" class="btn btn-primary w-100" id="botao-cadastro">
+                Confirmar dias
+              </button>
+            </form>
+        </div>
+    </div>
+</div>
+</main>
+
+<footer>
+    Email de contato: Uaimenu@gmail.com
+  </footer>
+   <!--animaçao do rodapé -->
+<script>
+  let lastScrollTop = 0;
+  const footer = document.querySelector("footer");
+
+  window.addEventListener("scroll", function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      // Scrolling down
+      footer.style.animation = "none"; // Reset animation
+      void footer.offsetHeight; // Trigger reflow
+      footer.style.animation = "floatIn 0.8s ease-out forwards"; // Restart animation
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Avoid negative values
+  });
+
+//fazer o a caixa branca aparece
+  const link = document.getElementById("cardapio-link");
+  const cardTopbar = document.getElementById("card-topbar");
+
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    cardTopbar.style.display =
+      cardTopbar.style.display === "block" ? "none" : "block";
+  });
+</script>
+</body>
+</html>
+
+
