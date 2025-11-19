@@ -29,7 +29,7 @@ require INC_PATH . '/header.php';?>
         <div class="card shadow p-4" id="card-formulario">
             <h2 class="card-title mb-4" id="titulo-cadastro" >Parabéns</h2>
             <!-- Parabains -->
-            <form action="seu_script_de_envio.php" method="POST">
+            <form action="cardapio.php" method="POST">
               <div class="mb-3">
                 <p class="fs-5 fw-semibold text-center">
                   Quais dias você gostaria de receber o cardápio em seu Whatsapp.
