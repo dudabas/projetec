@@ -1,6 +1,6 @@
 <?php
 
-$BASE_PATH = "/projetec-main/";
+$BASE_PATH = "/projetec-maindefinitiva/";
 
 if (!isset($page_title)) {
     $page_title = "PROJETEC - Seu Sistema";
@@ -39,3 +39,4 @@ if (!isset($page_title)) {
         <a class="menulink" href="<?php echo $BASE_PATH; ?>paginas_de_controle/duvidas.php">Dúvidas</a>
     </nav>
 </header>
+
