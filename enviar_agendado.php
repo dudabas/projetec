@@ -2,8 +2,8 @@
 require_once "conexao.php";
 
 // Config Meta (mesmos dados do enviar.php)
-$token = "SEU_TOKEN_DO_META";
-$phone_number_id = "SEU_PHONE_NUMBER_ID";
+$token = "EAASD82JnjE0BQCXo7Xey8FZAbGhnsG3eW6NwEgLhaG1LmqzHEx8kW6LWosw4DwZBZBy5GdjsoEZC3Q9bFD6LdFi3Yzfa2ZCAuSCwPpd8Jt4489rq9WqIsr7wrdNc19FMhkuceZCeNI38mSy8uUQ8hKV0efIl1D1bSE1Ome5pFNarDVtvvaS8ici6Ym43IFjCD4acgo1djVS2j6ZB8IIaqdlOeo0Fu5N7Q5tuvYcxHogYsdjG3k6AIrEuZCJX8vzbSV02y6sqL9jiET9NzWAzUBOXvQZDZD";
+$phone_number_id = "809271902276522";
 $url = "https://graph.facebook.com/v19.0/$phone_number_id/messages";
 
 
