@@ -36,7 +36,7 @@ require INC_PATH . '/header.php';?>
                     <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com" required>
                 </div>
                 <!-- Botao enviar -->
-                 <a href="recsenhaadm_2.html" button type="submit"  class="btn btn-primary w-100" id="botao-cadastro">Acessar</a>
+                 <a href="recsenhaadm_2.php" button type="submit"  class="btn btn-primary w-100" id="botao-cadastro">Acessar</a>
                 
                 
             </form>

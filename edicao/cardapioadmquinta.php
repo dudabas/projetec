@@ -22,6 +22,10 @@ $acompLista = array_filter(array_map('trim', explode("\n", $dados['acomp'])));
 $saladaLista = array_filter(array_map('trim', explode("\n", $dados['salada'])));
 $imagem = $dados['imagem'] ?: "imagens/image.png";
 ?>
+<?php 
+require 'config.php';
+require INC_PATH . '/header.php';
+?>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -34,25 +38,6 @@ $imagem = $dados['imagem'] ?: "imagens/image.png";
 </head>
 <body>
 
-<header class="top-bar">
-  <div class="icon-wrapper">
-    <a href="../index.html">
-      <img src="../imagens/image.png" alt="Logo" class="logo" />
-    </a>
-  </div>
-  <nav class="menu">
-    <div class="cardapio-dropdown">
-      <a class="menulink" href="#" id="cardapio-link">Cardápio ▾</a>
-      <div class="card-topbar" id="card-topbar" style="display: none;">
-        <a href="cardapio.html" class="card-link">Ver cardápio do dia</a>
-        <a href="../paginas_de_controle/cadastro_cliente.php" class="card-link">Receber diariamente</a>
-        <a href="../paginas_de_controle/apagar_numero.php" class="card-link">Remover Número</a>
-      </div>
-    </div>
-    <a class="menulink" href="../paginas_de_controle/cadastraradm.php">Administração</a>
-    <a class="menulink" href="../paginas_de_controle/duvidas.html">Dúvidas</a>
-  </nav>
-</header>
 
 <main class="container py-5">
   <h1 class="cardapiodia-page-title mb-4">Quinta-feira</h1>

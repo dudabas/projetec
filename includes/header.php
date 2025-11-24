@@ -35,8 +35,7 @@ if (!isset($page_title)) {
             </div>
         </div>
         <!-- LINKS DE NAVEGAÇÃO AGORA SÃO ABSOLUTOS -->
-        <a class="menulink" href="<?php echo $BASE_PATH; ?>paginas_de_controle/cadastraradm.php">Administração</a>
+        <a class="menulink" href="<?php echo $BASE_PATH; ?>paginas_de_controle/entraradm.php">Administração</a>
         <a class="menulink" href="<?php echo $BASE_PATH; ?>paginas_de_controle/duvidas.php">Dúvidas</a>
     </nav>
 </header>
-

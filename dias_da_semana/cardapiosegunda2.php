@@ -5,77 +5,58 @@ require INC_PATH . '/header.php';?>
 <head>
   <meta charset="UTF-8">
   <title>Uai Menu</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Architects+Daughter&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
 
-<main class="container py-5">
+  <main class="container py-5">
   <h1 class="cardapiodia-page-title mb-4">Segunda-feira</h1>
 
   <div class="cardapiodia-page-item">
     <div class="text-center mb-4">
       <p class="lead fs-4 fw-semibold">Cardápio do dia:</p>
-      <img src="comida.png" alt="Prato do dia" class="img-fluid rounded cardapiodia-img" style="max-width: 400px;">
+      <img src="comida.png" alt="Prato do dia" class="img-fluid rounded cardapiodia-img">
     </div>
 
     <div class="row g-4">
-      <!-- Card Carnes -->
       <div class="col-md-4">
-        <div class="card h-100 d-flex flex-column">
+        <div class="card h-100">
           <div class="card-header bg-danger text-white text-center fw-bold">Carnes</div>
-          <div class="card-body d-flex flex-column">
+          <div class="card-body">
             <ul class="list-unstyled">
               <li>- Bife de boi acebolado</li>
             </ul>
-            <!-- botao -->
-            <div class="mt-auto text-center">
-              <button class="btn btn-uai btn-sm">Editar texto</button>
-            </div>
+            
           </div>
         </div>
       </div>
 
-      <!-- Card Acompanhamentos -->
       <div class="col-md-4">
-        <div class="card h-100 d-flex flex-column">
+        <div class="card h-100">
           <div class="card-header bg-warning text-dark text-center fw-bold">Acompanhamentos</div>
-          <div class="card-body d-flex flex-column">
+          <div class="card-body">
             <ul class="list-unstyled">
               <li>- Arroz branco</li>
               <li>- Feijão carioca</li>
               <li>- Farinha de mandioca</li>
             </ul>
-            <!-- botao -->
-            <div class="mt-auto text-center">
-              <button class="btn btn-uai btn-sm">Editar texto</button>
-            </div>
           </div>
         </div>
       </div>
 
-      <!-- Card Saladas -->
       <div class="col-md-4">
-        <div class="card h-100 d-flex flex-column">
-          <div class="card-header bg-success text-white text-center fw-bold">Saladas</div>
-          <div class="card-body d-flex flex-column">
+        <div class="card h-100">
+          <div class="card-header bg-success text-white text-center fw-bold">Salada</div>
+          <div class="card-body">
             <ul class="list-unstyled">
               <li>- Alface com tomate</li>
             </ul>
-            <!-- botao -->
-            <div class="mt-auto text-center">
-              <button class="btn btn-uai btn-sm">Editar texto</button>
-            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- botao publica -->
-    <div class="text-center mt-4">
-      <button class="btn btn-publicar">Publicar</button>
     </div>
   </div>
 </main>

@@ -1,3 +1,7 @@
+<?php 
+require 'config.php';
+require INC_PATH . '/header.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -12,25 +16,7 @@
 </head>
 
 <body>
-<header class="top-bar">
-  <div class="icon-wrapper">
-  <a href="index.html">
-    <img src="./imagens/image.png" alt="Logo" class="logo" />
-  </a>
-</div>
-  <nav class="menu">
-    <div class="cardapio-dropdown">
-      <a class="menulink" href="#" id="cardapio-link">Cardápio ▾</a>
-      <div class="card-topbar" id="card-topbar" style="display: none;">
-        <a href="cardapio.html" class="card-link">Ver cardápio do dia</a>
-        <a href="cadastro_cliente.html" class="card-link">Receber diariamente</a>
-        <a href="apagar_numero.html" class="card-link">Remover número</a>
-      </div>
-    </div>
-    <a  class="menulink" href="cardapioadm.html">Administração</a>
-    <a class="menulink" href="duvidas.html">Dúvidas</a>
-  </nav>
-</header>
+
 
 <main class="container my-5">
     <div class="row align-items-center">
@@ -51,7 +37,7 @@
               <p class="fs-5 fw-semibold text-center">Digite seu numero do Whatsapp</p>
               <input type="tel" class="form-control" id="Numero" name="numero" placeholder="(xx) xxxxx-xxxx" required>
             </div>
-            <button href="Validacao_cliente.html" type="submit" class="btn btn-primary w-100" id="botao-cadastro">Enviar</button>
+            <button href="Validacao_cliente.php" type="submit" class="btn btn-primary w-100" id="botao-cadastro">Enviar</button>
           </form>
           <div id="mensagem-sucesso" class="mt-3 text-success fw-bold" style="display: none;">
             Numeero cadastrado com sucesso!

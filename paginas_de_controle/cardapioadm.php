@@ -20,10 +20,10 @@ require INC_PATH . '/header.php';?>
         <img src="../imagens/comida.png" class="card-img-top" alt="Segunda-feira">
         <div class="card-body">
           <h5 class="card-title">Segunda-feira</h5>
-          <a href="../dias_da_semana/cardapiosegunda.php" class="btn btn-primary">Clique para acessar o cardápio de segunda-feira</a>
+          <a href="../dias_da_semana/cardapiosegunda2.php" class="btn btn-primary">Clique para acessar o cardápio de segunda-feira</a>
         </div>
         <div class="mt-auto text-center">
-          <a href="../adm_dias_da_semana/cardapioadmsegunda.php" class="btn btn-uai btn-sm">Editar Cardápio</a>
+          <a href="../adm_dias_da_semana/cardapioadmsegunda2.php" class="btn btn-uai btn-sm">Editar Cardápio</a>
         </div>
       </div>
     </div>
@@ -34,10 +34,10 @@ require INC_PATH . '/header.php';?>
         <img src="../imagens/comida.png" class="card-img-top" alt="Terça-feira">
         <div class="card-body">
           <h5 class="card-title">Terça-feira</h5>
-          <a href="../dias_da_semana/cardapioterca.php" class="btn btn-primary">Clique para acessar o cardápio de terça-feira</a>
+          <a href="../dias_da_semana/cardapioterca2.php" class="btn btn-primary">Clique para acessar o cardápio de terça-feira</a>
         </div>
         <div class="mt-auto text-center">
-          <a href="../adm_dias_da_semana/cardapioadmterca.php" class="btn btn-uai btn-sm" >Editar Cardápio</a>
+          <a href="../adm_dias_da_semana/cardapioadmterca2.php" class="btn btn-uai btn-sm" >Editar Cardápio</a>
         </div>
       </div>
     </div>
@@ -48,10 +48,10 @@ require INC_PATH . '/header.php';?>
         <img src="../imagens/comida.png" class="card-img-top" alt="Quarta-feira">
         <div class="card-body">
           <h5 class="card-title">Quarta-feira</h5>
-          <a href="../dias_da_semana/cardapioquarta.php" class="btn btn-primary">Clique para acessar o cardápio de quarta-feira</a>
+          <a href="../dias_da_semana/cardapioquarta2.php" class="btn btn-primary">Clique para acessar o cardápio de quarta-feira</a>
         </div>
         <div class="mt-auto text-center">
-          <a href="../adm_dias_da_semana/cardapioadmquarta.php" class="btn btn-uai btn-sm" >Editar Cardápio</a>
+          <a href="../adm_dias_da_semana/cardapioadmquarta2.php" class="btn btn-uai btn-sm" >Editar Cardápio</a>
         </div>
       </div>
     </div>
@@ -62,10 +62,10 @@ require INC_PATH . '/header.php';?>
         <img src="../imagens/comida.png" class="card-img-top" alt="Quinta-feira">
         <div class="card-body">
           <h5 class="card-title">Quinta-feira</h5>
-          <a href="../dias_da_semana/cardapioquinta.php" class="btn btn-primary">Clique para acessar o cardápio de quinta-feira</a>
+          <a href="../dias_da_semana/cardapioquinta2.php" class="btn btn-primary">Clique para acessar o cardápio de quinta-feira</a>
         </div>
         <div class="mt-auto text-center">
-          <a href="../adm_dias_da_semana/cardapioadmquinta.php" class="btn btn-uai btn-sm" >Editar Cardápio</a>
+          <a href="../adm_dias_da_semana/cardapioadmquinta2.php" class="btn btn-uai btn-sm" >Editar Cardápio</a>
         </div>
       </div>
     </div>
@@ -76,10 +76,10 @@ require INC_PATH . '/header.php';?>
         <img src="../imagens/comida.png" class="card-img-top" alt="Sexta-feira">
         <div class="card-body">
           <h5 class="card-title">Sexta-feira</h5>
-          <a href="../dias_da_semana/cardapiosexta.php" class="btn btn-primary">Clique para acessar o cardápio de sexta-feira</a>
+          <a href="../dias_da_semana/cardapiosexta2.php" class="btn btn-primary">Clique para acessar o cardápio de sexta-feira</a>
         </div>
         <div class="mt-auto text-center">
-          <a href="../adm_dias_da_semana/cardapioadmsexta.php" class="btn btn-uai btn-sm" >Editar Cardápio</a>
+          <a href="../adm_dias_da_semana/cardapioadmsexta2.php" class="btn btn-uai btn-sm" >Editar Cardápio</a>
         </div>
       </div>
     </div>
@@ -89,10 +89,10 @@ require INC_PATH . '/header.php';?>
         <img src="../imagens/comida.png" class="card-img-top" alt="Quinta-feira">
         <div class="card-body">
           <h5 class="card-title">Sábado</h5>
-          <a href="../dias_da_semana/cardapiosabado.php" class="btn btn-primary">Clique para acessar o cardápio de Sábado</a>
+          <a href="../dias_da_semana/cardapiosabado2.php" class="btn btn-primary">Clique para acessar o cardápio de Sábado</a>
         </div>
         <div class="mt-auto text-center">
-          <a href="../adm_dias_da_semana/cardapioadmsabado.php" class="btn btn-uai btn-sm" >Editar Cardápio</a>
+          <a href="../adm_dias_da_semana/cardapioadmsabado2.php" class="btn btn-uai btn-sm" >Editar Cardápio</a>
         </div>
       </div>
     </div>
