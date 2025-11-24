@@ -2,8 +2,8 @@
 require_once "conexao.php";
 
 // Config Meta (mesmos dados do enviar.php)
-$token = "EAASD82JnjE0BQCXo7Xey8FZAbGhnsG3eW6NwEgLhaG1LmqzHEx8kW6LWosw4DwZBZBy5GdjsoEZC3Q9bFD6LdFi3Yzfa2ZCAuSCwPpd8Jt4489rq9WqIsr7wrdNc19FMhkuceZCeNI38mSy8uUQ8hKV0efIl1D1bSE1Ome5pFNarDVtvvaS8ici6Ym43IFjCD4acgo1djVS2j6ZB8IIaqdlOeo0Fu5N7Q5tuvYcxHogYsdjG3k6AIrEuZCJX8vzbSV02y6sqL9jiET9NzWAzUBOXvQZDZD";
-$phone_number_id = "809271902276522";
+$token = "EAASD82JnjE0BQLFWZCJJWmlIx8q4AQOPkDI3UBidtFknl9fhzdtg7VqTpM0rqvCfR9ZBAyYhoCLCsMHCPMzkQdZA4QBRI0CxwdqZAi9Y3erv5Nmg35ppqtsmAh2adjjWeaE4sS6t4XTCteaIDMHZCYgSrnGI9uau2SZCcLZAAr6levGQcsQdrpedocblGpkPCDmMAJ3n8b4MZC7QU7ARAGbTDXkEq46WLE029ZBlrzHLkHssgzy2jCC668rDaymqcBhQeaqStmFoUuMqhCAqMhqpMhSdA";
+$phone_number_id = "1350251776805873";
 $url = "https://graph.facebook.com/v19.0/$phone_number_id/messages";
 
 
