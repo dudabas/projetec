@@ -2,8 +2,8 @@
 require_once "conexao.php";
 
 // Config Meta (mesmos dados do enviar.php)
-$token = "EAASD82JnjE0BQLFWZCJJWmlIx8q4AQOPkDI3UBidtFknl9fhzdtg7VqTpM0rqvCfR9ZBAyYhoCLCsMHCPMzkQdZA4QBRI0CxwdqZAi9Y3erv5Nmg35ppqtsmAh2adjjWeaE4sS6t4XTCteaIDMHZCYgSrnGI9uau2SZCcLZAAr6levGQcsQdrpedocblGpkPCDmMAJ3n8b4MZC7QU7ARAGbTDXkEq46WLE029ZBlrzHLkHssgzy2jCC668rDaymqcBhQeaqStmFoUuMqhCAqMhqpMhSdA";
-$phone_number_id = "1350251776805873";
+$token = "SEU_TOKEN_DO_META";
+$phone_number_id = "SEU_PHONE_NUMBER_ID";
 $url = "https://graph.facebook.com/v19.0/$phone_number_id/messages";
 
 
@@ -34,7 +34,7 @@ if ($clientes->num_rows == 0) {
 // =============================
 // ENVIAR MENSAGEM
 // =============================
-$linkCardapio = "https://dudabas.github.io/cardapio.html";
+$linkCardapio = "https://dudabas.github.io/cardapio.php";
 $dataHoje = date("d/m/Y");
 
 while ($c = $clientes->fetch_assoc()) {

@@ -2,7 +2,7 @@
 $host = "localhost";
 $usuario = "root";
 $senha = "";
-$banco = "projetec";
+$banco = "uaiMenu";
 
 $con = new mysqli($host, $usuario, $senha, $banco);
 

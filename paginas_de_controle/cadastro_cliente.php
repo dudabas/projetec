@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<?php require '../config.php';
+require INC_PATH . '/header.php';?>
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
@@ -12,32 +14,13 @@
 </head>
 
 <body>
-<header class="top-bar">
-  <div class="icon-wrapper">
-  <a href="../index.html">
-    <img src="../img/image.png" alt="Logo" class="logo" />
-  </a>
-</div>
-  <nav class="menu">
-    <div class="cardapio-dropdown">
-      <a class="menulink" href="#" id="cardapio-link">Cardápio ▾</a>
-      <div class="card-topbar" id="card-topbar" style="display: none;">
-        <a href="../cardapio.html" class="card-link">Ver cardápio do dia</a>
-        <a href="../paginas_de_controle/cadastro_cliente.php" class="card-link">Receber diariamente</a>
-        <a href="../paginas_de_controle/apagar_numero.php" class="card-link">Remover Número</a>
-      </div>
-    </div>
-    <a  class="menulink" href="../paginas_de_controle/cadastraradm.php">Administração</a>
-    <a class="menulink" href="../paginas_de_controle/duvidas.html">Dúvidas</a>
-  </nav>
-</header>
 
 <main class="container my-5">
     <div class="row align-items-center">
         <!-- Coluna da Imagem -->
         <div class="col-md-6 mb-4 mb-md-0 ">
             <div class="image-container-cadastrar">
-                <img src="../img/espaguete.png" alt="Imagem de Comida Mineira" class="img-fluid rounded shadow" />
+                <img src="../imagens/espaguete.png" alt="Imagem de Comida Mineira" class="img-fluid rounded shadow" />
             </div>
         </div>
         <!-- Coluna do Formulário -->
@@ -52,7 +35,7 @@
 
                 </div>
                 <!-- Botao enviar -->
-                <a href="Validacao_cliente.php" type="submit" class="btn btn-primary w-100" id="botao-cadastro">Enviar</a>
+                <a href="parabens.php" type="submit" class="btn btn-primary w-100" id="botao-cadastro">Enviar</a>
             </form>
         </div>
     </div>

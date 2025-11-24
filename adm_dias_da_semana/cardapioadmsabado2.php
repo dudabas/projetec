@@ -1,5 +1,7 @@
-<?php require '../config.php';
-require INC_PATH . '/header.php';?>
+<?php 
+require '../config.php';
+require INC_PATH . '/header.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -13,12 +15,15 @@ require INC_PATH . '/header.php';?>
 
 
 <main class="container py-5">
-  <h1 class="cardapiodia-page-title mb-4">Segunda-feira</h1>
+  <h1 class="cardapiodia-page-title mb-4">Sábado</h1>
 
   <div class="cardapiodia-page-item">
     <div class="text-center mb-4">
       <p class="lead fs-4 fw-semibold">Cardápio do dia:</p>
       <img src="comida.png" alt="Prato do dia" class="img-fluid rounded cardapiodia-img" style="max-width: 400px;">
+      <div class="mt-auto text-center">
+        <button class="btn btn-uai btn-sm">Editar imagem</button>
+      </div>
     </div>
 
     <div class="row g-4">

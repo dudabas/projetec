@@ -1,4 +1,4 @@
-﻿<?php require '../config.php';
+<?php require '../config.php';
 require INC_PATH . '/header.php';?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -9,32 +9,28 @@ require INC_PATH . '/header.php';?>
   <title>Uai Menu</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="../styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Architects+Daughter&family=Tangerine:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
 
 <main class="container my-5">
     <div class="row align-items-center">
         <!-- Coluna da Imagem -->
         <div class="col-md-6 mb-4 mb-md-0 ">
             <div class="image-container-cadastrar">
-                <img src="<?php echo $BASE_PATH; ?>/imagens/espaguete.png" alt="Imagem de Comida Mineira" class="img-fluid rounded shadow" />
+                <img src="../imagens/espaguete.png" alt="Imagem de Comida Mineira" class="img-fluid rounded shadow" />
             </div>
         </div>
         <!-- Coluna do Formulário -->
-    <div class="col-md-6 " >
+    <div class="col-md-6" >
         <div class="card shadow p-4 cadastros" >
-            <h2 class="card-title mb-4" id="titulo-cadastro" >Gerenciar numero</h2>
-            <!-- botoes -->
-                <!-- Botao enviar -->
-                <div class="d-flex justify-content-between">
-			<a href="cadastro_cliente.php" class="btn btn-primary me-2 flex-fill" id="botao-cadastro">Adicionar número</a>
-  			<a href="apagar_numero.php" class="btn btn-primary flex-fill" id="botao-cadastro">Remover número</a>
-			</div>
-
+          <h2 class="card-title mb-4" id="titulo-cadastro" >🎉 Parabéns! 🎉</h2>
+            <p class="text-center lead">Você vai receber o cardápio atualizado pelo celular.</p>
+            <p class="text-muted mt-3">Fique de olho nas suas mensagens para não perder nenhuma novidade!</p>
+            
+            </form>
         </div>
     </div>
 </div>
@@ -73,8 +69,4 @@ require INC_PATH . '/header.php';?>
 </script>
 </body>
 </html>
-
-
-
-
 

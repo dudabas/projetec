@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS controle_envio (
 create table if not exists adm(
 email varchar (50),
 senha_adm char (10) NOT NULL DEFAULT '1234',
-senha_propria varchar (20),
+senha_propria varchar (255),
 id_adm int NOT NULL AUTO_INCREMENT primary key
 );
 
