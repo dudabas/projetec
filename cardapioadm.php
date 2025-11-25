@@ -6,9 +6,38 @@ if (!isset($_SESSION['admin_logado']) || $_SESSION['admin_logado'] !== true) {
     header("Location: entraradm.php");
     exit();
 }
+
+require_once __DIR__ . '/../edicao/config/database.php';
 require '../config.php';
 require INC_PATH . '/header.php';
+
+// Conexão
+$conn = Database::conectar();
+
+// Função para buscar imagem no banco
+function buscarImagem($conn, $dia) {
+    $query = $conn->prepare("SELECT imagem FROM cardapio_dia WHERE dia = :dia LIMIT 1");
+    $query->bindParam(':dia', $dia);
+    $query->execute();
+    $img = $query->fetchColumn();
+
+    if ($img) {
+        return "../edicao/" . $img;
+    }
+
+    return "../imagens/comida.png";
+}
+
+// Carregar imagens de cada dia
+$img_seg = buscarImagem($conn, "segunda-feira");
+$img_ter = buscarImagem($conn, "terça-feira");
+$img_qua = buscarImagem($conn, "quarta-feira");
+$img_qui = buscarImagem($conn, "quinta-feira");
+$img_sex = buscarImagem($conn, "sexta-feira");
+$img_sab = buscarImagem($conn, "sábado");
 ?>
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -64,10 +93,9 @@ require INC_PATH . '/header.php';
         <!-- Segunda-feira -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100" id="dia">
-                <img src="../imagens/comida.png" class="card-img-top" alt="Segunda-feira">
+                <img src="<?= $img_seg ?>" class="card-img-top" alt="Segunda-feira" style="max-height:200px; object-fit:cover;">
                 <div class="card-body">
                     <h5 class="card-title">Segunda-feira</h5>
-                    <a href="../dias_da_semana/cardapiosegunda.php" class="btn btn-primary">Clique para acessar o cardápio de segunda-feira</a>
                 </div>
                 <div class="mt-auto text-center">
                     <a href="../edicao/cardapioadmsegunda.php" class="btn btn-uai btn-sm">Editar Cardápio</a>
@@ -78,10 +106,9 @@ require INC_PATH . '/header.php';
         <!-- Terça-feira -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100" id="dia">
-                <img src="../imagens/comida.png" class="card-img-top" alt="Terça-feira">
+                <img src="<?= $img_ter ?>" class="card-img-top" alt="Terça-feira" style="max-height:200px; object-fit:cover;">
                 <div class="card-body">
                     <h5 class="card-title">Terça-feira</h5>
-                    <a href="../dias_da_semana/cardapioterca.php" class="btn btn-primary">Clique para acessar o cardápio de terça-feira</a>
                 </div>
                 <div class="mt-auto text-center">
                     <a href="../edicao/cardapioadmterca.php" class="btn btn-uai btn-sm" >Editar Cardápio</a>
@@ -92,10 +119,9 @@ require INC_PATH . '/header.php';
         <!-- Quarta-feira -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100" id="dia">
-                <img src="../imagens/comida.png" class="card-img-top" alt="Quarta-feira">
+                <img src="<?= $img_qua ?>" class="card-img-top" alt="Quarta-feira" style="max-height:200px; object-fit:cover;">
                 <div class="card-body">
                     <h5 class="card-title">Quarta-feira</h5>
-                    <a href="../dias_da_semana/cardapioquarta.php" class="btn btn-primary">Clique para acessar o cardápio de quarta-feira</a>
                 </div>
                 <div class="mt-auto text-center">
                     <a href="../edicao/cardapioadmquarta.php" class="btn btn-uai btn-sm" >Editar Cardápio</a>
@@ -106,10 +132,9 @@ require INC_PATH . '/header.php';
         <!-- Quinta-feira -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100" id="dia">
-                <img src="../imagens/comida.png" class="card-img-top" alt="Quinta-feira">
+                <img src="<?= $img_qui ?>" class="card-img-top" alt="Quinta-feira" style="max-height:200px; object-fit:cover;">
                 <div class="card-body">
                     <h5 class="card-title">Quinta-feira</h5>
-                    <a href="../dias_da_semana/cardapioquinta.php" class="btn btn-primary">Clique para acessar o cardápio de quinta-feira</a>
                 </div>
                 <div class="mt-auto text-center">
                     <a href="../edicao/cardapioadmquinta.php" class="btn btn-uai btn-sm" >Editar Cardápio</a>
@@ -120,10 +145,9 @@ require INC_PATH . '/header.php';
         <!-- Sexta-feira -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100" id="dia">
-                <img src="../imagens/comida.png" class="card-img-top" alt="Sexta-feira">
+                <img src="<?= $img_sex ?>" class="card-img-top" alt="Sexta-feira" style="max-height:200px; object-fit:cover;">
                 <div class="card-body">
                     <h5 class="card-title">Sexta-feira</h5>
-                    <a href="../dias_da_semana/cardapiosexta.php" class="btn btn-primary">Clique para acessar o cardápio de sexta-feira</a>
                 </div>
                 <div class="mt-auto text-center">
                     <a href="../edicao/cardapioadmsexta.php" class="btn btn-uai btn-sm" >Editar Cardápio</a>
@@ -133,10 +157,9 @@ require INC_PATH . '/header.php';
         <!-- Sabado -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100" id="dia">
-                <img src="../imagens/comida.png" class="card-img-top" alt="Sábado">
+                <img src="<?= $img_sab ?>" class="card-img-top" alt="Sábado" style="max-height:200px; object-fit:cover;">
                 <div class="card-body">
                     <h5 class="card-title">Sábado</h5>
-                    <a href="../dias_da_semana/cardapiosabado.php" class="btn btn-primary">Clique para acessar o cardápio de Sábado</a>
                 </div>
                 <div class="mt-auto text-center">
                     <a href="../edicao/cardapioadmsabado.php" class="btn btn-uai btn-sm" >Editar Cardápio</a>
