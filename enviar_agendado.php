@@ -39,10 +39,10 @@ $dataHoje = date("d/m/Y");
 
 while ($c = $clientes->fetch_assoc()) {
 
-    $nome = $c["nome"];
+    
     $telefone = $c["telefone"];
 
-    $mensagem = "Olá $nome! Houve uma atualização no cardápio diário de hoje ($dataHoje). Confira aqui: $linkCardapio";
+    $mensagem = " Houve uma atualização no cardápio diário de hoje ($dataHoje). Confira aqui: $linkCardapio";
 
     $data = [
         "messaging_product" => "whatsapp",

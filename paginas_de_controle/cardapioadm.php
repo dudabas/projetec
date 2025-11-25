@@ -45,28 +45,9 @@ $img_sab = buscarImagem($conn, "sábado");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uai Menu - Painel Admin</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Architects+Daughter&display=swap" rel="stylesheet">
-    <!-- ATUALIZADO: Usando Bootstrap 5.3.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
-    
     <style>
-        /* Estilos adicionais para o cardápio e o botão de logout */
-        .card-title {
-            font-family: 'Architects Daughter', cursive;
-            font-size: 1.5rem;
-        }
-        /* Botão de Edição Revertido para o estilo anterior */
-        .btn-uai {
-            background-color: #ff9900; /* Cor Laranja/Amarela */
-            border-color: #ff9900;
-            color: #fff;
-            /* Estilos de largura e margem foram removidos, usando o padrão do Bootstrap */
-        }
-        .btn-uai:hover {
-            background-color: #e68a00;
-            border-color: #e68a00;
-            color: #fff;
-        }
         .btn-logout { 
             background-color: #dc3545; /* Cor Vermelha para sair */
             border: none; 
@@ -85,7 +66,7 @@ $img_sab = buscarImagem($conn, "sábado");
 <body>
 
 <main class="container my-4">
-    <h1 class="text-center mb-5" style="font-family: 'Architects Daughter', cursive; color: #ff9900;">
+    <h1 class="text-center mb-5" style="font-family: 'Architects Daughter'">
         Gerenciamento do Cardápio Semanal
     </h1>
     
@@ -96,6 +77,7 @@ $img_sab = buscarImagem($conn, "sábado");
                 <img src="<?= $img_seg ?>" class="card-img-top" alt="Segunda-feira" style="max-height:200px; object-fit:cover;">
                 <div class="card-body">
                     <h5 class="card-title">Segunda-feira</h5>
+                    <a href="../dias_da_semana/cardapiosegunda.php" class="btn btn-primary">Clique para acessar o cardápio de segunda-feira</a>
                 </div>
                 <div class="mt-auto text-center">
                     <a href="../edicao/cardapioadmsegunda.php" class="btn btn-uai btn-sm">Editar Cardápio</a>
@@ -109,6 +91,7 @@ $img_sab = buscarImagem($conn, "sábado");
                 <img src="<?= $img_ter ?>" class="card-img-top" alt="Terça-feira" style="max-height:200px; object-fit:cover;">
                 <div class="card-body">
                     <h5 class="card-title">Terça-feira</h5>
+                    <a href="../dias_da_semana/cardapioterca.php" class="btn btn-primary">Clique para acessar o cardápio de terça-feira</a>
                 </div>
                 <div class="mt-auto text-center">
                     <a href="../edicao/cardapioadmterca.php" class="btn btn-uai btn-sm" >Editar Cardápio</a>
@@ -122,6 +105,7 @@ $img_sab = buscarImagem($conn, "sábado");
                 <img src="<?= $img_qua ?>" class="card-img-top" alt="Quarta-feira" style="max-height:200px; object-fit:cover;">
                 <div class="card-body">
                     <h5 class="card-title">Quarta-feira</h5>
+                    <a href="../dias_da_semana/cardapioquarta.php" class="btn btn-primary">Clique para acessar o cardápio de quarta-feira</a>
                 </div>
                 <div class="mt-auto text-center">
                     <a href="../edicao/cardapioadmquarta.php" class="btn btn-uai btn-sm" >Editar Cardápio</a>
@@ -135,6 +119,7 @@ $img_sab = buscarImagem($conn, "sábado");
                 <img src="<?= $img_qui ?>" class="card-img-top" alt="Quinta-feira" style="max-height:200px; object-fit:cover;">
                 <div class="card-body">
                     <h5 class="card-title">Quinta-feira</h5>
+                    <a href="../dias_da_semana/cardapioquinta.php" class="btn btn-primary">Clique para acessar o cardápio de quinta-feira</a>
                 </div>
                 <div class="mt-auto text-center">
                     <a href="../edicao/cardapioadmquinta.php" class="btn btn-uai btn-sm" >Editar Cardápio</a>
@@ -148,6 +133,7 @@ $img_sab = buscarImagem($conn, "sábado");
                 <img src="<?= $img_sex ?>" class="card-img-top" alt="Sexta-feira" style="max-height:200px; object-fit:cover;">
                 <div class="card-body">
                     <h5 class="card-title">Sexta-feira</h5>
+                    <a href="../dias_da_semana/cardapiosexta.php" class="btn btn-primary">Clique para acessar o cardápio de sexta-feira</a>
                 </div>
                 <div class="mt-auto text-center">
                     <a href="../edicao/cardapioadmsexta.php" class="btn btn-uai btn-sm" >Editar Cardápio</a>
@@ -160,6 +146,7 @@ $img_sab = buscarImagem($conn, "sábado");
                 <img src="<?= $img_sab ?>" class="card-img-top" alt="Sábado" style="max-height:200px; object-fit:cover;">
                 <div class="card-body">
                     <h5 class="card-title">Sábado</h5>
+                    <a href="../dias_da_semana/cardapiosabado.php" class="btn btn-primary">Clique para acessar o cardápio de sábado</a>
                 </div>
                 <div class="mt-auto text-center">
                     <a href="../edicao/cardapioadmsabado.php" class="btn btn-uai btn-sm" >Editar Cardápio</a>
