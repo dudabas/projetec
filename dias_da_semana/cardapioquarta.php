@@ -26,7 +26,7 @@ $imagem = $img->fetchColumn();
 $imagemExibida = $imagem ? "../edicao/" . $imagem : "../imagens/comida.png";
 ?>
 <?php 
-require 'config.php';
+require __DIR__ . '/../config.php';
 require INC_PATH . '/header.php';
 ?>
 
@@ -49,7 +49,7 @@ require INC_PATH . '/header.php';
       <p class="lead fs-4 fw-semibold">Cardápio do dia:</p>
 
       <!-- IMAGEM DO BANCO -->
-      <img src="<?= $imagemExibida ?>" alt="Prato do dia" class="img-fluid rounded cardapiodia-img">
+      <img src="<?= $imagemExibida ?>" alt="Prato do dia" class="img-fluid rounded cardapiodia-img" style="max-width:400px; max-height:300px; object-fit:cover;">
     </div>
 
     <div class="row g-4">
@@ -111,8 +111,24 @@ require INC_PATH . '/header.php';
     Email de contato: Uaimenu@gmail.com
   </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
+  let lastScrollTop = 0;
+  const footer = document.querySelector("footer");
+
+  window.addEventListener("scroll", function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      // Scrolling down
+      footer.style.animation = "none"; // Reset animation
+      void footer.offsetHeight; // Trigger reflow
+      footer.style.animation = "floatIn 0.8s ease-out forwards"; // Restart animation
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Avoid negative values
+  });
+
+//fazer o a caixa branca aparece
   const link = document.getElementById("cardapio-link");
   const cardTopbar = document.getElementById("card-topbar");
 

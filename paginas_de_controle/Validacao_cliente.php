@@ -14,7 +14,7 @@
 <body>
 <header class="top-bar">
   <div class="icon-wrapper">
-  <a href="../index.html">
+  <a href="./index.html">
     <img src="../imagens/image.png" alt="Logo" class="logo" />
   </a>
 </div>
@@ -43,49 +43,20 @@
         <!-- Coluna do Formulário -->
     <div class="col-md-6" >
         <div class="card shadow p-4" id="card-formulario">
-            <h2 class="card-title mb-4" id="titulo-cadastro" >Parabéns</h2>
-            <!-- Parabains -->
-            <form action="seu_script_de_envio.php" method="POST">
-              <div class="mb-3">
-                <p class="fs-5 fw-semibold text-center">
-                  Quais dias você gostaria de receber o cardápio em seu Whatsapp.
-                </p>
-              </div>
-            
-              <div class="mb-4">
-                <div class="form-check border rounded p-3 mb-3">
-                  <input class="form-check-input" type="checkbox" name="dias[]" value="Segunda-feira" id="segunda">
-                  <label class="form-check-label" for="segunda">Segunda-feira</label>
+            <h2 class="card-title mb-4" id="titulo-cadastro" >Validação de código</h2>
+            <form>
+                <!-- Validacao -->
+                <div class="mb-3">
+                    <p class="fs-5 fw-semibold text-center">Enviamos um código para o seu celular</p>
+                    <label for="validacao" class="form-label fw-semibold" id="label_entrar">Insira o código aqui:</label>
+                    <input type="number" class="form-control" id="validacao" placeholder="Código" required>
+                    <!-- quando a validaçao der errado
+                     <p class="fs-6 fw-semibold " id="error">Código incorreto tente novamente:  </p>
+                    -->
                 </div>
-                <div class="form-check border rounded p-3 mb-3">
-                  <input class="form-check-input" type="checkbox" name="dias[]" value="Terça-feira" id="terca">
-                  <label class="form-check-label" for="terca">Terça-feira</label>
-                </div>
-                <div class="form-check border rounded p-3 mb-3">
-                  <input class="form-check-input" type="checkbox" name="dias[]" value="Quarta-feira" id="quarta">
-                  <label class="form-check-label" for="quarta">Quarta-feira</label>
-                </div>
-                <div class="form-check border rounded p-3 mb-3">
-                  <input class="form-check-input" type="checkbox" name="dias[]" value="Quinta-feira" id="quinta">
-                  <label class="form-check-label" for="quinta">Quinta-feira</label>
-                </div>
-                <div class="form-check border rounded p-3 mb-3">
-                  <input class="form-check-input" type="checkbox" name="dias[]" value="Sexta-feira" id="sexta">
-                  <label class="form-check-label" for="sexta">Sexta-feira</label>
-                </div>
-                <div class="form-check border rounded p-3 mb-3">
-                  <input class="form-check-input" type="checkbox" name="dias[]" value="Sábado" id="sabado">
-                  <label class="form-check-label" for="sabado">Sábado</label>
-                </div>
-                <div class="form-check border rounded p-3 mb-3">
-                  <input class="form-check-input" type="checkbox" name="dias[]" value="Domingo" id="domingo">
-                  <label class="form-check-label" for="domingo">Domingo</label>
-                </div>
-              </div>
-            
-              <button type="submit" class="btn btn-primary w-100" id="botao-cadastro">
-                Confirmar dias
-              </button>
+
+                <!-- Botao enviar -->
+                <a href="parabeins.php" type="submit" class="btn btn-primary w-100" id="botao-cadastro">Validar</a>
             </form>
         </div>
     </div>
@@ -125,5 +96,4 @@
 </script>
 </body>
 </html>
-
 

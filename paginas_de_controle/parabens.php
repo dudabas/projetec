@@ -1,4 +1,4 @@
-﻿<?php require '../config.php';
+<?php require '../config.php';
 require INC_PATH . '/header.php';?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -26,16 +26,10 @@ require INC_PATH . '/header.php';?>
         <!-- Coluna do Formulário -->
     <div class="col-md-6" >
         <div class="card shadow p-4 cadastros" >
-            <h2 class="card-title mb-4" id="titulo-cadastro" >Envio diário</h2>
-            <form>
-                <!-- Numero -->
-                <div class="mb-3">
-                    <p class="fs-5 fw-semibold text-center">Digite seu número do Whatsapp</p>
-                    <input type="tel" class="form-control" id="Numero" placeholder="(xx) xxxxx-xxxx" required>
-
-                </div>
-                <!-- Botao enviar -->
-                <a href="parabens.php" type="submit" class="btn btn-primary w-100" id="botao-cadastro">Enviar</a>
+          <h2 class="card-title mb-4" id="titulo-cadastro" >🎉 Parabéns! 🎉</h2>
+            <p class="text-center lead">Você vai receber o cardápio atualizado pelo celular.</p>
+            <p class="text-muted mt-3">Fique de olho nas suas mensagens para não perder nenhuma novidade!</p>
+            
             </form>
         </div>
     </div>
@@ -75,10 +69,4 @@ require INC_PATH . '/header.php';?>
 </script>
 </body>
 </html>
-
-
-
-
-
-
 
