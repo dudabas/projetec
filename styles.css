@@ -1,3 +1,97 @@
+/*putaria mobile*/
+/* --- MEDIA QUERIES PARA DISPOSITIVOS MÓVEIS --- */
+@media (max-width: 600px) {
+
+    .top-bar {
+        flex-direction: column; 
+        padding: 10px 15px; 
+    }
+
+    .logo {
+        width: 150px;
+        height: 75px;
+        margin-bottom: 10px; 
+    }
+
+    .menu {
+        justify-content: center;
+        width: 100%;
+        margin-top: 5px;
+        flex-wrap: nowrap; 
+    }
+
+    .menulink {
+        margin-left: 0;
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    
+    .intro-text {
+        padding: 10px;
+    }
+
+    .intro-text h2 {
+        font-size: 16px;
+    }
+
+    .intro-text p {
+        font-size: 14px;
+    }
+
+    .image-container img {
+        max-width: 95%;
+    }
+
+    .cardapio-dropdown {
+        width: 100%; 
+    }
+    
+    .card-topbar {
+        position: relative; 
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin-top: 10px;
+    }
+    
+    #dia {
+        flex-direction: column;
+        height: auto; 
+        padding: 15px;
+        text-align: center;
+    }
+    
+    .cardapio-page-img {
+        width: 90%;
+        height: auto;
+        margin: 0 auto 15px auto; 
+    }
+    
+    .cardapio-page-texto {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cardapio-page-title {
+        font-size: 26px; 
+    }
+    
+    .btn.btn-primary {
+        padding: 10px 30px; 
+    }
+    
+    footer {
+        padding: 0.8rem;
+        font-size: 14px;
+    }
+}
+
+
 /*base*/
 html, body {
   height: 100%;
@@ -434,5 +528,8 @@ quando a validaçao der errado
 .btn-publicar:hover {
   background-color: #e2d9bb;
   border: 1px solid #444;
+}
+.teste {
+  padding-bottom: 10px;
 }
 

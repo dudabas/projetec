@@ -5,7 +5,6 @@ use uaiMenu;
 
 CREATE TABLE IF NOT EXISTS cliente_rest (
     id_cliente_rest INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
     telefone VARCHAR(20) NOT NULL
 );
 CREATE TABLE IF NOT EXISTS controle_envio (

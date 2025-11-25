@@ -1,4 +1,4 @@
-﻿<?php require '../config.php';
+<?php require '../config.php';
 require INC_PATH . '/header.php';?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -14,28 +14,22 @@ require INC_PATH . '/header.php';?>
 </head>
 
 <body>
+
 <main class="container my-5">
     <div class="row align-items-center">
         <!-- Coluna da Imagem -->
         <div class="col-md-6 mb-4 mb-md-0 ">
             <div class="image-container-cadastrar">
-                <img src="<?php echo $BASE_PATH; ?>/imagens/espaguete.png" alt="Imagem de Comida Mineira" class="img-fluid rounded shadow" />
+                <img src="../imagens/espaguete.png" alt="Imagem de Comida Mineira" class="img-fluid rounded shadow" />
             </div>
         </div>
         <!-- Coluna do Formulário -->
     <div class="col-md-6" >
         <div class="card shadow p-4 cadastros" >
-            <h2 class="card-title mb-4" id="titulo-cadastro" >Remover número</h2>
-            <form>
-                <!-- Numero -->
-                <div class="mb-3">
-                    <p class="fs-5 fw-semibold text-center">Digite seu número do Whatsapp</p>
-                    <input type="tel" class="form-control" id="Numero" placeholder="(xx) xxxxx-xxxx" required>
-
-                </div>
-                <!-- Botao apagar -->
-                <a href="parabens_apagar.php" type="submit" class="btn btn-primary w-100" id="botao-cadastro">Apagar</a>
-            </form>
+          <h2 class="card-title mb-4" id="titulo-desativado">🚫 Notificações Desativadas 🚫</h2>
+          <p class="text-center lead">Confirmamos que você não receberá mais o cardápio atualizado pelo celular.</p>
+          <p class="text-muted mt-3">Essa alteração é imediata. Caso mude de ideia, basta refazer o seu cadastro.</p>
+            
         </div>
     </div>
 </div>
@@ -74,10 +68,4 @@ require INC_PATH . '/header.php';?>
 </script>
 </body>
 </html>
-
-
-
-
-
-
 
