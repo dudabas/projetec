@@ -65,5 +65,6 @@ require INC_PATH . '/header.php';
       cardTopbar.style.display === "block" ? "none" : "block";
   });
 </script>
+
 </body>
 </html>

@@ -1,97 +1,92 @@
-/*putaria mobile*/
 /* --- MEDIA QUERIES PARA DISPOSITIVOS MÓVEIS --- */
+/* Botão oculto por padrão em telas grandes */
+.menu-toggle {
+    display: none; 
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 0;
+}
 @media (max-width: 600px) {
-
+    /* 1. LAYOUT PRINCIPAL DO HEADER */
     .top-bar {
-        flex-direction: column; 
-        padding: 10px 15px; 
+        justify-content: space-between; 
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 10px 15px;
     }
 
-    .logo {
-        width: 150px;
-        height: 75px;
-        margin-bottom: 10px; 
+    .menu-toggle {
+        display: block; /* Exibe o botão */
+        order: 2;
     }
 
+    /* 2. MENU DE LINKS (Oculto/Vertical) */
     .menu {
-        justify-content: center;
+        display: none; /* Oculto por padrão */
+        flex-direction: column;
         width: 100%;
-        margin-top: 5px;
-        flex-wrap: nowrap; 
-    }
-
-    .menulink {
-        margin-left: 0;
-        font-size: 18px;
-        padding: 5px 10px;
-    }
-
-    h1 {
-        font-size: 24px;
-        margin-top: 20px;
+        order: 3;
+        background-color: #333; /* Cor de fundo escuro como no seu modelo */
+        position: absolute; /* Para deslizar o menu por cima */
+        top: 90px; /* Ajuste para aparecer abaixo do header */
+        left: 0;
+        z-index: 10;
+        padding: 0;
     }
     
-    .intro-text {
-        padding: 10px;
+    .menu.active {
+        display: block; /* Faz o menu aparecer */
     }
 
-    .intro-text h2 {
-        font-size: 16px;
+    /* 3. LINKS INDIVIDUAIS */
+    .menulink {
+        /* Estilos baseados no seu .topnav a */
+        text-align: left; /* Alinhamento à esquerda como no modelo */
+        padding: 14px 16px; /* Padding maior para mobile */
+        margin: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        display: block; /* Ocupa a largura total (chave para menu vertical) */
+        background-color: #333; 
+        color: white;
+        text-decoration: none;
+        font-weight: normal; /* Para não parecer um cabeçalho */
     }
 
-    .intro-text p {
-        font-size: 14px;
+    .menulink:hover {
+        background-color: #ddd;
+        color: black;
     }
-
-    .image-container img {
-        max-width: 95%;
-    }
-
+    
+    /* 4. DROP DOWN DO CARDÁPIO */
     .cardapio-dropdown {
-        width: 100%; 
+        width: 100%;
+        text-align: left; /* Muda para esquerda */
     }
     
     .card-topbar {
-        position: relative; 
+        position: static; 
         width: 100%;
-        left: 0;
-        right: 0;
-        margin-top: 10px;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0;
+        background-color: #444; /* Cor diferente para o sub-menu */
     }
     
-    #dia {
-        flex-direction: column;
-        height: auto; 
-        padding: 15px;
-        text-align: center;
+    .card-link {
+        padding: 10px 30px; /* Recuo para sub-item */
+        background-color: transparent;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        color: white;
     }
     
-    .cardapio-page-img {
-        width: 90%;
-        height: auto;
-        margin: 0 auto 15px auto; 
-    }
-    
-    .cardapio-page-texto {
-        width: 100%;
-        text-align: center;
-    }
-
-    .cardapio-page-title {
-        font-size: 26px; 
-    }
-    
-    .btn.btn-primary {
-        padding: 10px 30px; 
-    }
-    
-    footer {
-        padding: 0.8rem;
-        font-size: 14px;
+    /* Outros ajustes necessários */
+    .logo {
+        margin-bottom: 0;
     }
 }
-
-
 /*base*/
 html, body {
   height: 100%;
@@ -478,14 +473,12 @@ quando a validaçao der errado
 }
 
 .cardapiodia-page-item {
-  justify-content: start;
   background: #f4eed3;
   border: 1px solid #444;
   border-radius: 10px;
   margin: 20px auto;
-  width: 90%;
-  height: 770px;
-  max-height: 90%;
+  width: 90%; 
+  height: auto; 
   padding: 20px;
   text-align: center;
 }

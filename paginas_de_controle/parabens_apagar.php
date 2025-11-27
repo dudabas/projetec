@@ -26,7 +26,7 @@ require INC_PATH . '/header.php';?>
         <!-- Coluna do Formulário -->
     <div class="col-md-6" >
         <div class="card shadow p-4 cadastros" >
-          <h2 class="card-title mb-4" id="titulo-desativado">🚫 Notificações Desativadas 🚫</h2>
+          <h2 class="card-title mb-4" id="titulo-desativado">Notificações Desativadas</h2>
           <p class="text-center lead">Confirmamos que você não receberá mais o cardápio atualizado pelo celular.</p>
           <p class="text-muted mt-3">Essa alteração é imediata. Caso mude de ideia, basta refazer o seu cadastro.</p>
             

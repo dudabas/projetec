@@ -51,12 +51,11 @@ session_start(); // Inicia a sessão para acessar $_SESSION
                     <label for="senha" class="form-label fw-semibold">Senha:</label>
                     <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required>
                 </div>
-            
-                <ul>
-                    <li>Mínimo 8 caracteres</li>
-                    <li>Conter caracteres especiais</li>
-                    <li>Conter números e letras</li>
-                </ul>
+                <ul style="text-align: left; padding-left: 20px;">
+                   <li>Mínimo 8 caracteres</li>
+                   <li>Conter caracteres especiais</li>
+                   <li>Conter números e letras</li>
+                   </ul>
             
                 <div class="mb-3">
                     <label for="confirmarSenha" class="form-label fw-semibold">Confirmar senha:</label>

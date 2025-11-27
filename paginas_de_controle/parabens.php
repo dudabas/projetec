@@ -26,7 +26,7 @@ require INC_PATH . '/header.php';?>
         <!-- Coluna do Formulário -->
     <div class="col-md-6" >
         <div class="card shadow p-4 cadastros" >
-          <h2 class="card-title mb-4" id="titulo-cadastro" >🎉 Parabéns! 🎉</h2>
+          <h2 class="card-title mb-4" id="titulo-cadastro" > Parabéns! </h2>
             <p class="text-center lead">Você vai receber o cardápio atualizado pelo celular.</p>
             <p class="text-muted mt-3">Fique de olho nas suas mensagens para não perder nenhuma novidade!</p>
             
