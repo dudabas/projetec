@@ -1,4 +1,4 @@
-﻿<?php 
+﻿﻿<?php 
 require '../config.php';
 require INC_PATH . '/header.php';
 // Inclui o arquivo de conexão. CORRIJA O CAMINHO SE NECESSÁRIO!

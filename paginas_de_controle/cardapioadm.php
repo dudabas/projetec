@@ -6,9 +6,38 @@ if (!isset($_SESSION['admin_logado']) || $_SESSION['admin_logado'] !== true) {
     header("Location: entraradm.php");
     exit();
 }
+
+require_once __DIR__ . '/../edicao/config/database.php';
 require '../config.php';
 require INC_PATH . '/header.php';
+
+// Conexão
+$conn = Database::conectar();
+
+// Função para buscar imagem no banco
+function buscarImagem($conn, $dia) {
+    $query = $conn->prepare("SELECT imagem FROM cardapio_dia WHERE dia = :dia LIMIT 1");
+    $query->bindParam(':dia', $dia);
+    $query->execute();
+    $img = $query->fetchColumn();
+
+    if ($img) {
+        return "../edicao/" . $img;
+    }
+
+    return "../imagens/comida.png";
+}
+
+// Carregar imagens de cada dia
+$img_seg = buscarImagem($conn, "segunda-feira");
+$img_ter = buscarImagem($conn, "terça-feira");
+$img_qua = buscarImagem($conn, "quarta-feira");
+$img_qui = buscarImagem($conn, "quinta-feira");
+$img_sex = buscarImagem($conn, "sexta-feira");
+$img_sab = buscarImagem($conn, "sábado");
 ?>
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -16,28 +45,9 @@ require INC_PATH . '/header.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uai Menu - Painel Admin</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Architects+Daughter&display=swap" rel="stylesheet">
-    <!-- ATUALIZADO: Usando Bootstrap 5.3.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
-    
     <style>
-        /* Estilos adicionais para o cardápio e o botão de logout */
-        .card-title {
-            font-family: 'Architects Daughter', cursive;
-            font-size: 1.5rem;
-        }
-        /* Botão de Edição Revertido para o estilo anterior */
-        .btn-uai {
-            background-color: #ff9900; /* Cor Laranja/Amarela */
-            border-color: #ff9900;
-            color: #fff;
-            /* Estilos de largura e margem foram removidos, usando o padrão do Bootstrap */
-        }
-        .btn-uai:hover {
-            background-color: #e68a00;
-            border-color: #e68a00;
-            color: #fff;
-        }
         .btn-logout { 
             background-color: #dc3545; /* Cor Vermelha para sair */
             border: none; 
@@ -56,7 +66,7 @@ require INC_PATH . '/header.php';
 <body>
 
 <main class="container my-4">
-    <h1 class="text-center mb-5" style="font-family: 'Architects Daughter', cursive; color: #ff9900;">
+    <h1 class="text-center mb-5" style="font-family: 'Architects Daughter'">
         Gerenciamento do Cardápio Semanal
     </h1>
     
@@ -64,7 +74,7 @@ require INC_PATH . '/header.php';
         <!-- Segunda-feira -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100" id="dia">
-                <img src="../imagens/comida.png" class="card-img-top" alt="Segunda-feira">
+                <img src="<?= $img_seg ?>" class="card-img-top" alt="Segunda-feira" style="max-height:200px; object-fit:cover;">
                 <div class="card-body">
                     <h5 class="card-title">Segunda-feira</h5>
                     <a href="../dias_da_semana/cardapiosegunda.php" class="btn btn-primary">Clique para acessar o cardápio de segunda-feira</a>
@@ -78,7 +88,7 @@ require INC_PATH . '/header.php';
         <!-- Terça-feira -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100" id="dia">
-                <img src="../imagens/comida.png" class="card-img-top" alt="Terça-feira">
+                <img src="<?= $img_ter ?>" class="card-img-top" alt="Terça-feira" style="max-height:200px; object-fit:cover;">
                 <div class="card-body">
                     <h5 class="card-title">Terça-feira</h5>
                     <a href="../dias_da_semana/cardapioterca.php" class="btn btn-primary">Clique para acessar o cardápio de terça-feira</a>
@@ -92,7 +102,7 @@ require INC_PATH . '/header.php';
         <!-- Quarta-feira -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100" id="dia">
-                <img src="../imagens/comida.png" class="card-img-top" alt="Quarta-feira">
+                <img src="<?= $img_qua ?>" class="card-img-top" alt="Quarta-feira" style="max-height:200px; object-fit:cover;">
                 <div class="card-body">
                     <h5 class="card-title">Quarta-feira</h5>
                     <a href="../dias_da_semana/cardapioquarta.php" class="btn btn-primary">Clique para acessar o cardápio de quarta-feira</a>
@@ -106,7 +116,7 @@ require INC_PATH . '/header.php';
         <!-- Quinta-feira -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100" id="dia">
-                <img src="../imagens/comida.png" class="card-img-top" alt="Quinta-feira">
+                <img src="<?= $img_qui ?>" class="card-img-top" alt="Quinta-feira" style="max-height:200px; object-fit:cover;">
                 <div class="card-body">
                     <h5 class="card-title">Quinta-feira</h5>
                     <a href="../dias_da_semana/cardapioquinta.php" class="btn btn-primary">Clique para acessar o cardápio de quinta-feira</a>
@@ -120,7 +130,7 @@ require INC_PATH . '/header.php';
         <!-- Sexta-feira -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100" id="dia">
-                <img src="../imagens/comida.png" class="card-img-top" alt="Sexta-feira">
+                <img src="<?= $img_sex ?>" class="card-img-top" alt="Sexta-feira" style="max-height:200px; object-fit:cover;">
                 <div class="card-body">
                     <h5 class="card-title">Sexta-feira</h5>
                     <a href="../dias_da_semana/cardapiosexta.php" class="btn btn-primary">Clique para acessar o cardápio de sexta-feira</a>
@@ -133,10 +143,10 @@ require INC_PATH . '/header.php';
         <!-- Sabado -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100" id="dia">
-                <img src="../imagens/comida.png" class="card-img-top" alt="Sábado">
+                <img src="<?= $img_sab ?>" class="card-img-top" alt="Sábado" style="max-height:200px; object-fit:cover;">
                 <div class="card-body">
                     <h5 class="card-title">Sábado</h5>
-                    <a href="../dias_da_semana/cardapiosabado.php" class="btn btn-primary">Clique para acessar o cardápio de Sábado</a>
+                    <a href="../dias_da_semana/cardapiosabado.php" class="btn btn-primary">Clique para acessar o cardápio de sábado</a>
                 </div>
                 <div class="mt-auto text-center">
                     <a href="../edicao/cardapioadmsabado.php" class="btn btn-uai btn-sm" >Editar Cardápio</a>

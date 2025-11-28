@@ -30,9 +30,14 @@ require INC_PATH . '/header.php';
 <head>
   <meta charset="UTF-8">
   <title>Uai Menu</title>
-  <link rel="stylesheet" href="../styles.css">
+<style>
+  .teste{
+    padding-bottom: 10px;
+  }
+  </style>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Architects+Daughter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
@@ -50,7 +55,7 @@ require INC_PATH . '/header.php';
 
       <!-- Carnes -->
       <div class="col-md-4">
-        <div class="card h-100 d-flex flex-column">
+        <div class="card h-100 d-flex flex-column teste">
           <div class="card-header bg-danger text-white text-center fw-bold">Carnes</div>
           <div class="card-body d-flex flex-column">
             <ul class="list-unstyled">
@@ -68,7 +73,7 @@ require INC_PATH . '/header.php';
 
       <!-- Acompanhamento -->
       <div class="col-md-4">
-        <div class="card h-100 d-flex flex-column">
+        <div class="card h-100 d-flex flex-column teste">
           <div class="card-header bg-warning text-dark text-center fw-bold">Acompanhamentos</div>
           <div class="card-body d-flex flex-column">
             <ul class="list-unstyled">
@@ -86,7 +91,7 @@ require INC_PATH . '/header.php';
 
       <!-- Saladas -->
       <div class="col-md-4">
-        <div class="card h-100 d-flex flex-column">
+        <div class="card h-100 d-flex flex-column teste">
           <div class="card-header bg-success text-white text-center fw-bold">Saladas</div>
           <div class="card-body d-flex flex-column">
             <ul class="list-unstyled">

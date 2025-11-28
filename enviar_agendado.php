@@ -1,9 +1,9 @@
 <?php
-require_once "conexao.php";
+require_once "cadastro_clientephp.php";
 
 // Config Meta (mesmos dados do enviar.php)
-$token = "SEU_TOKEN_DO_META";
-$phone_number_id = "SEU_PHONE_NUMBER_ID";
+$token = "EAASD82JnjE0BQHQs0KGNxwoYAgNwrknJCDypKFpVu3wqw8gs33hWls7hz95T3ZBdbbqZA5Vk1WNJYKMvA5URWPraR4TBBpu1weEfd411ZBfbpvledJyZC8lEedj8hVUaZBpDrWyf2oqdA8latxJkNGt5rXZC91gyGf5vCyrKbSPye79LAZCT5fkU5Y4xOaQjUQSdfeZBpzSLHi4kiF3g4rkVWXjLEmNZAb1iZB8TLBDVLmEremvkG06mgzgq6oiPTa4LI44i9xko4BfZAW7Ew3YmZBkZC0diSCwZDZD";
+$phone_number_id = "809271902276522";
 $url = "https://graph.facebook.com/v19.0/$phone_number_id/messages";
 
 
@@ -39,10 +39,10 @@ $dataHoje = date("d/m/Y");
 
 while ($c = $clientes->fetch_assoc()) {
 
-    $nome = $c["nome"];
+    
     $telefone = $c["telefone"];
 
-    $mensagem = "Olá $nome! Houve uma atualização no cardápio diário de hoje ($dataHoje). Confira aqui: $linkCardapio";
+    $mensagem = " Houve uma atualização no cardápio diário de hoje ($dataHoje). Confira aqui: $linkCardapio";
 
     $data = [
         "messaging_product" => "whatsapp",

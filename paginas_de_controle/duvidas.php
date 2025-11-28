@@ -6,12 +6,12 @@ require INC_PATH . '/header.php';?>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uai Menu</title>
-    <link rel="stylesheet" href="../styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Tangerine:wght@700&display=swap"
       rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Architects+Daughter&display=swap"
       rel="stylesheet">
+      <link rel="stylesheet" href="../styles.css">
   </head>
 <body>
   <main>
