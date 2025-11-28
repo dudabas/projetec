@@ -44,7 +44,7 @@ $img_sab = buscarImagem($conn, "sábado");
       <!-- Segunda-feira -->
   <div class="col-md-6 col-lg-4">
     <div class="card h-100" id="dia">
-      <img src="<?= $img_seg ?>" class="card-img-top" alt="Segunda-feira" style="max-height:200px; object-fit:cover;">
+      <img src="<?= $img_seg ?>" class="card-img-top" alt="Segunda-feira" style="height:200px; object-fit:cover;">
       <div class="card-body">
         <h5 class="card-title">Segunda-feira</h5>
         <a href="../dias_da_semana/cardapiosegunda.php" class="btn btn-primary">Clique para acessar </a>
@@ -55,7 +55,7 @@ $img_sab = buscarImagem($conn, "sábado");
   <!-- Terça-feira -->
   <div class="col-md-6 col-lg-4">
     <div class="card h-100" id="dia">
-      <img src="<?= $img_ter ?>" class="card-img-top" alt="Terça-feira" style="max-height:200px; object-fit:cover;">
+      <img src="<?= $img_ter ?>" class="card-img-top" alt="Terça-feira" style="height:200px; object-fit:cover;">
       <div class="card-body">
         <h5 class="card-title">Terça-feira</h5>
         <a href="../dias_da_semana/cardapioterca.php" class="btn btn-primary">Clique para acessar </a>
@@ -66,7 +66,7 @@ $img_sab = buscarImagem($conn, "sábado");
   <!-- Quarta-feira -->
   <div class="col-md-6 col-lg-4">
     <div class="card h-100" id="dia">
-      <img src="<?= $img_qua ?>" class="card-img-top" alt="Quarta-feira" style="max-height:200px; object-fit:cover;">
+      <img src="<?= $img_qua ?>" class="card-img-top" alt="Quarta-feira" style="height:200px; object-fit:cover;">
       <div class="card-body">
         <h5 class="card-title">Quarta-feira</h5>
         <a href="../dias_da_semana/cardapioquarta.php" class="btn btn-primary">Clique para acessar </a>
@@ -77,7 +77,7 @@ $img_sab = buscarImagem($conn, "sábado");
   <!-- Quinta-feira -->
   <div class="col-md-6 col-lg-4">
     <div class="card h-100" id="dia">
-      <img src="<?= $img_qui ?>" class="card-img-top" alt="Quinta-feira" style="max-height:200px; object-fit:cover;">
+      <img src="<?= $img_qui ?>" class="card-img-top" alt="Quinta-feira" style="height:200px; object-fit:cover;">
       <div class="card-body">
         <h5 class="card-title">Quinta-feira</h5>
         <a href="../dias_da_semana/cardapioquinta.php" class="btn btn-primary">Clique para acessar </a>
@@ -88,7 +88,7 @@ $img_sab = buscarImagem($conn, "sábado");
   <!-- Sexta-feira -->
   <div class="col-md-6 col-lg-4">
     <div class="card h-100" id="dia">
-      <img src="<?= $img_sex ?>" class="card-img-top" alt="Sexta-feira" style="max-height:200px; object-fit:cover;">
+      <img src="<?= $img_sex ?>" class="card-img-top" alt="Sexta-feira" style="height:200px; object-fit:cover;">
       <div class="card-body">
         <h5 class="card-title">Sexta-feira</h5>
         <a href="../dias_da_semana/cardapiosexta.php" class="btn btn-primary">Clique para acessar </a>
@@ -99,7 +99,7 @@ $img_sab = buscarImagem($conn, "sábado");
   <!-- Sábado -->
   <div class="col-md-6 col-lg-4">
     <div class="card h-100" id="dia">
-      <img src="<?= $img_sab ?>" class="card-img-top" alt="Sábado" style="max-height:200px; object-fit:cover;">
+      <img src="<?= $img_sab ?>" class="card-img-top" alt="Sábado" style="height:200px; object-fit:cover;">
       <div class="card-body">
         <h5 class="card-title">Sábado</h5>
         <a href="../dias_da_semana/cardapiosabado.php" class="btn btn-primary">Clique para acessar </a>
